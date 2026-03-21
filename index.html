@@ -75,26 +75,58 @@
         linear-gradient(rgba(11, 24, 43, 0.72), rgba(11, 24, 43, 0.72)),
         url('texture%20_blue_leather.png') center/cover no-repeat;
       backdrop-filter: blur(10px);
-      box-shadow: 0 1px 0 rgba(44,26,14,0.08);
-      transition: background 0.3s, backdrop-filter 0.3s, box-shadow 0.3s;
+      box-shadow: 0 2px 0 rgba(255,255,255,0.14) inset, 0 -2px 0 rgba(0,0,0,0.26) inset, 0 12px 30px rgba(0,0,0,0.35);
+      transition: background 0.3s, backdrop-filter 0.3s, box-shadow 0.3s, transform 0.3s;
+      transform: translateZ(0);
+      isolation: isolate;
+    }
+    nav::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: rgba(255,255,255,0.4);
+      z-index: -1;
+    }
+    nav::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: rgba(0,0,0,0.35);
+      z-index: -1;
     }
     nav.scrolled {
       background:
         linear-gradient(rgba(11, 24, 43, 0.82), rgba(11, 24, 43, 0.82)),
         url('texture%20_blue_leather.png') center/cover no-repeat;
       backdrop-filter: blur(14px);
-      box-shadow: 0 1px 0 rgba(44,26,14,0.12), 0 6px 24px rgba(44,26,14,0.08);
+      box-shadow: 0 2px 0 rgba(255,255,255,0.12) inset, 0 -2px 0 rgba(0,0,0,0.3) inset, 0 16px 36px rgba(0,0,0,0.45);
     }
     .nav-logo {
       display: flex;
       align-items: center;
-      gap: 14px;
+      justify-content: center;
+      width: 88px;
+      height: 88px;
       text-decoration: none;
+    }
+    .nav-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 0 8px rgba(184,196,212,0.45));
     }
     .nav-links {
       display: flex;
       gap: 36px;
       list-style: none;
+      perspective: 800px;
     }
     .nav-links a {
       font-size: 13px;
@@ -104,9 +136,19 @@
       color: var(--parchment);
       text-decoration: none;
       opacity: 0.7;
-      transition: opacity 0.2s, color 0.2s;
+      padding: 8px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.09);
+      background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02));
+      box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 -1px 0 rgba(0,0,0,0.32) inset, 0 6px 14px rgba(0,0,0,0.28);
+      transition: opacity 0.2s, color 0.2s, transform 0.22s ease, box-shadow 0.22s ease;
     }
-    .nav-links a:hover { opacity: 1; color: #9cc6ef; }
+    .nav-links a:hover {
+      opacity: 1;
+      color: #9cc6ef;
+      transform: translateY(-2px) translateZ(10px);
+      box-shadow: 0 1px 0 rgba(255,255,255,0.25) inset, 0 -1px 0 rgba(0,0,0,0.3) inset, 0 10px 20px rgba(0,0,0,0.35);
+    }
     nav.scrolled .nav-links a { color: var(--parchment); }
     nav.scrolled .nav-links a:hover { color: #9cc6ef; }
 
@@ -413,6 +455,39 @@
     }
     #projects .section-eyebrow { color: var(--moss); }
     #projects .section-title { color: var(--espresso); }
+    .projects-intro {
+      text-align: center;
+      margin: 0 auto 48px;
+      max-width: 760px;
+      line-height: 1.75;
+      font-size: clamp(19px, 2.35vw, 26px);
+      color: rgba(44,26,14,0.92);
+      letter-spacing: 0.2px;
+      font-weight: 500;
+      text-wrap: balance;
+    }
+    .projects-intro strong {
+      color: #13315c;
+      font-weight: 700;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+    }
+    .projects-intro .intro-accent {
+      color: #1a3d7a;
+      font-style: italic;
+      font-weight: 600;
+    }
+    .projects-intro .live-gradient {
+      background: linear-gradient(90deg, #0f2f5c, #2b6cb0, #4a8fd4, #13315c);
+      background-size: 220% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: wordFlow 2.6s linear infinite;
+    }
+    @keyframes wordFlow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
+    }
 
     .projects-grid {
       display: grid;
@@ -822,7 +897,7 @@
   <nav id="navbar">
     <!-- Brand logo -->
     <a href="#hero" class="nav-logo">
-      <img src="logo.png" alt="LS Logo" style="height:48px;width:auto;display:block;filter:drop-shadow(0 0 8px rgba(184,196,212,0.45));"/>
+      <img src="logo.png" alt="LS Logo"/>
     </a>
     <!-- Primary navigation links -->
     <ul class="nav-links">
@@ -930,7 +1005,7 @@
       <p class="section-eyebrow">A Selection of My Work</p>
       <h2 class="section-title">Projects that <em>drive decisions</em></h2>
     </div>
-    <p style="text-align:center;margin-bottom:48px;font-size:16px;color:var(--espresso);max-width:600px;margin-left:auto;margin-right:auto;line-height:1.7;" class="reveal">From payroll analytics to machine learning — each project solves a real business problem end-to-end.</p>
+    <p class="projects-intro reveal">From <strong class="live-gradient">payroll analytics</strong> to <span class="intro-accent live-gradient">machine learning</span> — each project solves a real business problem <strong class="live-gradient">end-to-end</strong>.</p>
     <div class="projects-grid">
 
       <!-- Diabetes Prediction Model -->
