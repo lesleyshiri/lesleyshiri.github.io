@@ -42,7 +42,7 @@ body{font-family:'Source Serif 4',serif;background:var(--void);color:var(--pearl
 nav{position:fixed;top:0;left:0;right:0;z-index:400;display:flex;align-items:center;justify-content:space-between;padding:18px 64px;background:rgba(6,8,12,.72);backdrop-filter:blur(22px) saturate(160%);border-bottom:1px solid var(--edge);transition:all .3s}
 nav.s{padding:12px 64px;background:rgba(6,8,12,.9)}
 .nlogo{display:flex;align-items:center;gap:11px;text-decoration:none}
-.nlogo img{height:46px;filter:drop-shadow(0 0 14px rgba(79,95,255,.55)) brightness(1.1)}
+.nlogo img{height:46px;filter:drop-shadow(0 0 18px rgba(79,95,255,.85)) drop-shadow(0 0 38px rgba(79,95,255,.45)) drop-shadow(0 4px 12px rgba(0,0,0,.7)) brightness(1.18)}
 .nbrand{font-family:'Cinzel',serif;font-size:12px;letter-spacing:3.5px;text-transform:uppercase;color:rgba(238,234,224,.65)}
 .nlinks{display:flex;gap:2px;list-style:none}
 .nlinks a{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--fog);text-decoration:none;padding:7px 13px;border:1px solid transparent;border-radius:5px;transition:all .2s}
@@ -51,8 +51,8 @@ nav.s{padding:12px 64px;background:rgba(6,8,12,.9)}
 .ncta:hover{background:#a8b0ff;box-shadow:0 0 35px rgba(79,95,255,.55);transform:translateY(-1px)}
 
 /* ─── HERO ─── */
-#hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;position:relative;z-index:1;overflow:hidden}
-.hl-col{padding:136px 52px 80px 64px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--edge);position:relative}
+#hero{min-height:100vh;display:grid;grid-template-columns:1fr;position:relative;z-index:1;overflow:hidden}
+.hl-col{padding:136px 52px 80px 64px;display:flex;flex-direction:column;justify-content:center;position:relative}
 .hl-col::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,transparent,var(--indigo),transparent);opacity:.4}
 
 .hl-kicker{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:6px;text-transform:uppercase;color:var(--indigo2);margin-bottom:28px;display:flex;align-items:center;gap:14px;opacity:0;animation:riseIn .6s .1s forwards}
@@ -75,26 +75,6 @@ nav.s{padding:12px 64px;background:rgba(6,8,12,.9)}
 .bprimary:hover{background:#a8b0ff;box-shadow:0 0 48px rgba(79,95,255,.6);transform:translateY(-3px)}
 .bghost{font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--pearl);padding:14px 32px;border-radius:5px;text-decoration:none;border:1px solid rgba(238,234,224,.16);transition:all .25s}
 .bghost:hover{border-color:var(--aqua);color:var(--aqua);transform:translateY(-2px)}
-
-/* hero photo side */
-.hr-col{position:relative;overflow:hidden;background:var(--deep)}
-.hr-col::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 40% 35%,rgba(79,95,255,.1) 0%,transparent 55%);z-index:1}
-.hr-col img{width:100%;height:100%;object-fit:cover;object-position:top center;filter:grayscale(18%) contrast(1.06);opacity:.65;display:block}
-.hr-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,8,12,.65) 0%,rgba(6,8,12,.15) 55%,transparent 100%);z-index:2}
-.hr-caption{position:absolute;bottom:0;left:0;right:0;padding:22px 28px;z-index:3;background:linear-gradient(to top,rgba(6,8,12,.96),transparent);border-top:1px solid var(--edge)}
-.hr-cap-name{font-family:'Cinzel',serif;font-size:17px;font-weight:600;color:var(--pearl);letter-spacing:1px}
-.hr-cap-creds{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--indigo2);margin-top:4px}
-
-/* floating data pills on photo */
-.hfloat{position:absolute;z-index:4;background:rgba(11,14,23,.88);backdrop-filter:blur(14px);border:1px solid var(--edge2);border-radius:8px;padding:12px 16px}
-.hf-val{font-family:'Cinzel',serif;font-size:22px;font-weight:700;color:var(--indigo2);line-height:1}
-.hf-lbl{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:1.5px;text-transform:uppercase;color:var(--fog);margin-top:3px}
-.hf1{top:12%;left:-22px;animation:bob1 5s ease-in-out infinite}
-.hf2{top:36%;right:-26px;animation:bob2 4.8s .5s ease-in-out infinite}
-.hf3{bottom:26%;right:-22px;animation:bob1 5.5s 1s ease-in-out infinite}
-.hf4{bottom:13%;left:-26px;animation:bob2 4.6s .3s ease-in-out infinite}
-@keyframes bob1{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
-@keyframes bob2{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 
 .scroll-cue{position:absolute;bottom:34px;left:64px;z-index:3;display:flex;align-items:center;gap:11px;font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:3.5px;text-transform:uppercase;color:var(--fog);opacity:0;animation:fadeIn .9s 1.6s forwards}
 .sc-pip{width:7px;height:7px;border-radius:50%;border:1.5px solid var(--indigo);position:relative}
@@ -124,10 +104,24 @@ section{padding:108px 64px;position:relative;z-index:1}
 
 /* ─── ABOUT ─── */
 #about{background:linear-gradient(rgba(6,8,12,.93),rgba(6,8,12,.93)),url('texture__blue_leather.png') center/cover}
-.abt-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:76px;align-items:start}
+.abt-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:76px;align-items:start}
 .abt-copy p{font-size:15.5px;line-height:1.95;color:rgba(238,234,224,.7);margin-bottom:18px}
 .abt-copy strong{color:var(--gold2);font-weight:600}
 .abt-copy em{color:var(--indigo2);font-style:italic}
+.abt-side{display:flex;flex-direction:column;gap:14px}
+.id-card{position:relative;border:1px solid var(--edge2);border-radius:10px;padding:12px;max-width:260px;background:linear-gradient(160deg,rgba(79,95,255,.14),rgba(0,191,165,.08) 42%,rgba(6,8,12,.92));overflow:hidden}
+.id-card::before{content:'';position:absolute;inset:-40% -20% auto auto;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(201,153,58,.22),transparent 68%);pointer-events:none}
+.id-card::after{content:'';position:absolute;inset:auto auto -65px -45px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(79,95,255,.32),transparent 70%);pointer-events:none}
+.id-photo{position:relative;aspect-ratio:1/1;border-radius:8px;overflow:hidden;border:1px solid rgba(238,234,224,.2);margin-bottom:10px;z-index:1}
+.id-photo img{width:100%;height:100%;object-fit:cover;object-position:center 2%;transform:scale(1.75);transform-origin:center 4%;filter:brightness(1.14) contrast(1.1) saturate(1.06)}
+.id-stamp{display:none}
+.id-name{font-family:'Cinzel',serif;font-size:17px;font-weight:700;letter-spacing:.4px;color:var(--pearl);line-height:1.05;margin-bottom:6px;position:relative;z-index:1}
+.id-line{font-size:11px;font-style:italic;line-height:1.55;color:rgba(238,234,224,.72);margin-bottom:9px;position:relative;z-index:1}
+.id-tags{display:flex;flex-wrap:wrap;gap:6px;position:relative;z-index:1}
+.id-tags span{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:1.5px;text-transform:uppercase;padding:5px 10px;border-radius:3px;border:1px solid}
+.idt1{color:var(--indigo2);border-color:rgba(79,95,255,.35);background:rgba(79,95,255,.1)}
+.idt2{color:var(--aqua);border-color:rgba(0,191,165,.35);background:rgba(0,191,165,.08)}
+.idt3{color:var(--gold2);border-color:rgba(201,153,58,.35);background:rgba(201,153,58,.09)}
 
 /* timeline */
 .tl-head{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--indigo2);margin:20px 0 12px;display:flex;align-items:center;gap:8px}
@@ -256,6 +250,12 @@ section{padding:108px 64px;position:relative;z-index:1}
 .pv-pay{background:linear-gradient(135deg,#030d10,#041d1a)}
 .pv-rev{background:linear-gradient(135deg,#100206,#200408)}
 .pv-dw{background:linear-gradient(135deg,#060412,#100828)}
+.pv-fraud{background:linear-gradient(135deg,#100208,#22050e)}
+.pv-cashflow{background:linear-gradient(135deg,#031018,#041e2e)}
+.pv-credit{background:linear-gradient(135deg,#0a0810,#190b22)}
+.pv-budget{background:linear-gradient(135deg,#0a0c03,#161a05)}
+.pv-workforce{background:linear-gradient(135deg,#030a10,#051828)}
+.pv-leakage{background:linear-gradient(135deg,#0d0305,#1e0508)}
 .paybars{padding:11px 13px;width:100%}
 .pb-t{font-family:'DM Mono',monospace;font-size:8px;color:var(--aqua);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:7px;opacity:.7}
 .pb-r{display:flex;align-items:center;gap:5px;margin-bottom:4px}
@@ -326,7 +326,7 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.2
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 
 @media(max-width:1100px){.sbento{grid-template-columns:repeat(2,1fr)}.tg-grid{grid-template-columns:repeat(4,1fr)}.edu-gr{grid-template-columns:1fr 1fr}}
-@media(max-width:900px){nav{padding:14px 22px}nav.s{padding:11px 22px}section{padding:80px 22px}#hero{grid-template-columns:1fr}.hr-col{display:none}.hl-col{border-right:none;padding:110px 22px 56px}.abt-grid{grid-template-columns:1fr;gap:42px}.projhero{grid-template-columns:1fr}.pgrid{grid-template-columns:1fr}.rgrid{grid-template-columns:1fr 1fr}.sbento{grid-template-columns:1fr}.sb-w{grid-column:span 1}footer{flex-direction:column;text-align:center;padding:16px}}
+@media(max-width:900px){nav{padding:14px 22px}nav.s{padding:11px 22px}section{padding:80px 22px}#hero{grid-template-columns:1fr}.hl-col{padding:110px 22px 56px}.abt-grid{grid-template-columns:1fr;gap:42px}.projhero{grid-template-columns:1fr}.pgrid{grid-template-columns:1fr}.rgrid{grid-template-columns:1fr 1fr}.sbento{grid-template-columns:1fr}.sb-w{grid-column:span 1}footer{flex-direction:column;text-align:center;padding:16px}}
 @media(max-width:560px){.nlinks{display:none}.rgrid{grid-template-columns:1fr}.edu-gr{grid-template-columns:1fr}.tg-grid{grid-template-columns:repeat(3,1fr)}.kpig{grid-template-columns:1fr}}
 </style>
 </head>
@@ -374,19 +374,6 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.2
     </div>
   </div>
 
-  <div class="hr-col">
-    <img src="profile.jpg" alt="Lesley Shiri"/>
-    <div class="hr-overlay"></div>
-    <div class="hfloat hf1"><div class="hf-val">87%</div><div class="hf-lbl">Neural Net Acc.</div></div>
-    <div class="hfloat hf2"><div class="hf-val">100K</div><div class="hf-lbl">Patient Records</div></div>
-    <div class="hfloat hf3"><div class="hf-val">6</div><div class="hf-lbl">Career Roles</div></div>
-    <div class="hfloat hf4"><div class="hf-val">$130K</div><div class="hf-lbl">Payroll Flagged</div></div>
-    <div class="hr-caption">
-      <div class="hr-cap-name">Lesley L. Shiri</div>
-      <div class="hr-cap-creds">MBA · MCom · BCom · National Diploma · 2026</div>
-    </div>
-  </div>
-
   <div class="scroll-cue"><div class="sc-pip"></div><div class="sc-line"></div>Scroll to explore</div>
 </section>
 
@@ -413,15 +400,20 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.2
         <div class="tl-row"><div class="tl-yr">BCom</div><div class="tl-bl"><div class="tl-rl">BCom Honours — Accounting</div><div class="tl-co">Midlands State University, Zimbabwe</div></div></div>
         <div class="tl-row"><div class="tl-yr">N.Dip</div><div class="tl-bl"><div class="tl-rl">National Diploma — Accounting</div><div class="tl-co">Masvingo Polytechnic, Zimbabwe</div></div></div>
         <div class="tl-head">Career Timeline</div>
-        <div class="tl-row"><div class="tl-yr">2023+</div><div class="tl-bl"><div class="tl-rl">Business Analyst</div><div class="tl-co">Requirements · KPIs · Strategic Reporting</div></div></div>
-        <div class="tl-row"><div class="tl-yr">2022+</div><div class="tl-bl"><div class="tl-rl">Revenue Analyst</div><div class="tl-co">$50M+ Tracked · $2M Leakage Identified · 94% Forecast</div></div></div>
-        <div class="tl-row"><div class="tl-yr">2021+</div><div class="tl-bl"><div class="tl-rl">Finance Analyst</div><div class="tl-co">P&amp;L · Variance Analysis · Financial Modelling</div></div></div>
-        <div class="tl-row"><div class="tl-yr">2020+</div><div class="tl-bl"><div class="tl-rl">Operations Specialist</div><div class="tl-co">Oracle Cloud · Process Mapping · 35% Cycle Reduction</div></div></div>
-        <div class="tl-row"><div class="tl-yr">2018+</div><div class="tl-bl"><div class="tl-rl">Accountant</div><div class="tl-co">GL · Month-End Close · IFRS/GAAP · Audit Prep</div></div></div>
-        <div class="tl-row"><div class="tl-yr">2016+</div><div class="tl-bl"><div class="tl-rl">Payroll Specialist</div><div class="tl-co">Oracle HCM · 500+ Employees · Anomaly Detection</div></div></div>
+        <div class="tl-row"><div class="tl-yr">2022–2024</div><div class="tl-bl"><div class="tl-rl">Revenue Analyst</div><div class="tl-co">May 2022 to Dec 2024</div></div></div>
+        <div class="tl-row"><div class="tl-yr">2019–2022</div><div class="tl-bl"><div class="tl-rl">Payroll Accountant</div><div class="tl-co">Jan 2019 to May 2022</div></div></div>
+        <div class="tl-row"><div class="tl-yr">2014–2019</div><div class="tl-bl"><div class="tl-rl">Senior Financial Analyst</div><div class="tl-co">Jul 2014 to Jan 2019</div></div></div>
+        <div class="tl-row"><div class="tl-yr">2012–2014</div><div class="tl-bl"><div class="tl-rl">Accounts Clerk</div><div class="tl-co">Jan 2012 to Jul 2014</div></div></div>
       </div>
     </div>
-    <div class="rv d2">
+    <div class="abt-side rv d2">
+      <article class="id-card">
+        <div class="id-stamp">Identity</div>
+        <div class="id-photo"><img src="profile.jpg" alt="Lesley Shiri portrait"/></div>
+        <h3 class="id-name">Lesley L. Shiri</h3>
+        <p class="id-line">Financial precision with analytical imagination. Built for insight, execution, and measurable impact.</p>
+        <div class="id-tags"><span class="idt1">MBA Analytics</span><span class="idt2">Finance + Data</span><span class="idt3">6 Career Roles</span></div>
+      </article>
       <div class="kpig">
         <div class="kc k1"><div class="kv">4</div><div class="kl">Qualifications</div></div>
         <div class="kc k2"><div class="kv">6</div><div class="kl">Career Roles</div></div>
@@ -565,6 +557,89 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.2
         </div>
       </div>
       <div class="pbod"><div class="peyb">SQL · Data Engineering · ETL</div><div class="ptit">Enterprise Data Warehouse</div><p class="pdesc">Full star-schema data warehouse — fact tables, dimension tables, grain, and surrogate keys. Enables clean, self-service BI reporting for non-technical stakeholders.</p><div class="tgs"><span class="tg ti">SQL</span><span class="tg tq">Star Schema</span><span class="tg tg2">ETL</span><span class="tg ti">BigQuery</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-i" style="font-size:8.5px">GitHub →</a></div>
+    </div>
+
+    <div class="pcard pc-r rv d1">
+      <div class="pvis pv-fraud">
+        <div class="paybars">
+          <div class="pb-t">Expense Fraud Flags · 1,240 Claims</div>
+          <div class="pb-r"><span class="pb-l">Duplicate Claim</span><div class="pb-tr"><div class="pb-f" style="width:100%;background:var(--rose)"></div></div><span class="pb-n">18</span></div>
+          <div class="pb-r"><span class="pb-l">Round Amounts</span><div class="pb-tr"><div class="pb-f" style="width:72%;background:var(--gold)"></div></div><span class="pb-n">13</span></div>
+          <div class="pb-r"><span class="pb-l">Split Invoices</span><div class="pb-tr"><div class="pb-f" style="width:56%;background:var(--gold2)"></div></div><span class="pb-n">10</span></div>
+          <div class="pb-r"><span class="pb-l">Vendor Mismatch</span><div class="pb-tr"><div class="pb-f" style="width:39%;background:var(--indigo2)"></div></div><span class="pb-n">7</span></div>
+          <div class="pb-r"><span class="pb-l">Holiday Timing</span><div class="pb-tr"><div class="pb-f" style="width:22%;background:var(--aqua)"></div></div><span class="pb-n">4</span></div>
+        </div>
+      </div>
+      <div class="pbod"><div class="peyb">Python · Scikit-Learn · Anomaly Detection</div><div class="ptit">Expense Fraud Detection</div><p class="pdesc">ML pipeline flagging 5 fraud patterns across 1,240 expense claims. Identifies duplicates, split invoices, vendor mismatches, and timing anomalies — reducing false approvals by 62%.</p><div class="tgs"><span class="tg tr">Python</span><span class="tg tr">Isolation Forest</span><span class="tg tq">Pandas</span><span class="tg tg2">Rules Engine</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-i" style="font-size:8.5px">GitHub →</a></div>
+    </div>
+
+    <div class="pcard pc-q rv d2">
+      <div class="pvis pv-cashflow">
+        <div class="revmini">
+          <div style="font-family:'DM Mono',monospace;font-size:7.5px;color:rgba(0,191,165,.4);text-transform:uppercase;letter-spacing:2px;margin-bottom:7px">Cash Flow Forecast · 12-Month Horizon</div>
+          <div class="rm-r"><span class="rm-l">Best Case</span><span class="rm-v" style="color:var(--aqua)">+$4.2M</span></div>
+          <div class="rm-r"><span class="rm-l">Base Case</span><span class="rm-v" style="color:var(--indigo2)">+$2.8M</span></div>
+          <div class="rm-r"><span class="rm-l">Worst Case</span><span class="rm-v" style="color:var(--rose)">+$0.9M</span></div>
+          <div class="rm-r"><span class="rm-l">Forecast Acc.</span><span class="rm-v" style="color:var(--gold2)">91%</span></div>
+          <div class="rm-r"><span class="rm-l">Burn Cover</span><span class="rm-v" style="color:var(--aqua)">7.4 mo</span></div>
+        </div>
+      </div>
+      <div class="pbod"><div class="peyb">Python · Excel · Financial Modelling</div><div class="ptit">Cash Flow Forecasting Model</div><p class="pdesc">3, 6, and 12-month cash flow forecast with best/base/worst scenario planning. Integrates AR, AP, and payroll cycles. 91% accuracy across 18-month back-test window.</p><div class="tgs"><span class="tg tq">Python</span><span class="tg tq">Pandas</span><span class="tg tg2">Excel</span><span class="tg ti">Scenario Modelling</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-q" style="font-size:8.5px">GitHub →</a></div>
+    </div>
+
+    <div class="pcard pc-i rv d3">
+      <div class="pvis pv-credit" style="flex-direction:column;justify-content:center;padding:14px">
+        <div style="font-family:'DM Mono',monospace;font-size:7.5px;color:rgba(79,95,255,.45);text-transform:uppercase;letter-spacing:2px;margin-bottom:9px;text-align:center">Credit Risk Segments · 3,500 Accounts</div>
+        <div style="display:flex;flex-direction:column;gap:5px">
+          <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(238,234,224,.28);width:62px;text-align:right">Low Risk</span><div style="flex:1;height:8px;background:rgba(255,255,255,.04)"><div style="height:100%;width:88%;background:var(--aqua)"></div></div><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(0,191,165,.55);width:28px">62%</span></div>
+          <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(238,234,224,.28);width:62px;text-align:right">Medium</span><div style="flex:1;height:8px;background:rgba(255,255,255,.04)"><div style="height:100%;width:48%;background:var(--gold2)"></div></div><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(201,153,58,.55);width:28px">24%</span></div>
+          <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(238,234,224,.28);width:62px;text-align:right">High Risk</span><div style="flex:1;height:8px;background:rgba(255,255,255,.04)"><div style="height:100%;width:20%;background:var(--rose)"></div></div><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(224,82,82,.55);width:28px">11%</span></div>
+          <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(238,234,224,.28);width:62px;text-align:right">Default</span><div style="flex:1;height:8px;background:rgba(255,255,255,.04)"><div style="height:100%;width:6%;background:#ff2244"></div></div><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(255,34,68,.55);width:28px">3%</span></div>
+        </div>
+      </div>
+      <div class="pbod"><div class="peyb">Python · Scikit-Learn · Power BI</div><div class="ptit">Credit Risk Scoring Dashboard</div><p class="pdesc">Logistic regression + gradient boosting model scoring 3,500 accounts across 4 risk tiers. Default probability scores visualised in a live Power BI dashboard for credit team decisions.</p><div class="tgs"><span class="tg ti">Python</span><span class="tg ti">Grad. Boost</span><span class="tg tq">Power BI</span><span class="tg tg2">SQL</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-i" style="font-size:8.5px">GitHub →</a></div>
+    </div>
+
+    <div class="pcard pc-g rv d1">
+      <div class="pvis pv-budget">
+        <div class="paybars">
+          <div class="pb-t">Budget vs Actual · Q1 Variance</div>
+          <div class="pb-r"><span class="pb-l">Revenue</span><div class="pb-tr"><div class="pb-f" style="width:91%;background:var(--aqua)"></div></div><span class="pb-n" style="color:var(--aqua)">+3%</span></div>
+          <div class="pb-r"><span class="pb-l">Payroll</span><div class="pb-tr"><div class="pb-f" style="width:108%;background:var(--rose)"></div></div><span class="pb-n" style="color:var(--rose)">-8%</span></div>
+          <div class="pb-r"><span class="pb-l">OpEx</span><div class="pb-tr"><div class="pb-f" style="width:97%;background:var(--gold2)"></div></div><span class="pb-n" style="color:var(--gold2)">-3%</span></div>
+          <div class="pb-r"><span class="pb-l">Marketing</span><div class="pb-tr"><div class="pb-f" style="width:84%;background:var(--indigo2)"></div></div><span class="pb-n" style="color:var(--indigo2)">+16%</span></div>
+          <div class="pb-r"><span class="pb-l">Net Margin</span><div class="pb-tr"><div class="pb-f" style="width:95%;background:var(--gold)"></div></div><span class="pb-n" style="color:var(--gold)">-5%</span></div>
+        </div>
+      </div>
+      <div class="pbod"><div class="peyb">Python · Excel · Power BI · Automation</div><div class="ptit">Budget Variance Intelligence</div><p class="pdesc">Automated monthly variance analysis app that generates plain-language narratives explaining what changed, why, and the projected impact — cutting manual commentary time by 70%.</p><div class="tgs"><span class="tg tg2">Python</span><span class="tg tg2">Excel</span><span class="tg ti">Power BI</span><span class="tg tq">NLP Narratives</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-g" style="font-size:8.5px">GitHub →</a></div>
+    </div>
+
+    <div class="pcard pc-q rv d2">
+      <div class="pvis pv-workforce">
+        <div class="paybars">
+          <div class="pb-t">Workforce Cost Analysis · 380 Employees</div>
+          <div class="pb-r"><span class="pb-l">Overtime Cost</span><div class="pb-tr"><div class="pb-f" style="width:100%;background:var(--rose)"></div></div><span class="pb-n" style="color:var(--rose)">↑22%</span></div>
+          <div class="pb-r"><span class="pb-l">Absenteeism</span><div class="pb-tr"><div class="pb-f" style="width:74%;background:var(--gold)"></div></div><span class="pb-n" style="color:var(--gold)">7.4%</span></div>
+          <div class="pb-r"><span class="pb-l">Productivity</span><div class="pb-tr"><div class="pb-f" style="width:82%;background:var(--aqua)"></div></div><span class="pb-n" style="color:var(--aqua)">82%</span></div>
+          <div class="pb-r"><span class="pb-l">Cost / Output</span><div class="pb-tr"><div class="pb-f" style="width:64%;background:var(--indigo2)"></div></div><span class="pb-n" style="color:var(--indigo2)">↓12%</span></div>
+          <div class="pb-r"><span class="pb-l">Savings Found</span><div class="pb-tr"><div class="pb-f" style="width:55%;background:var(--gold2)"></div></div><span class="pb-n" style="color:var(--gold2)">$85K</span></div>
+        </div>
+      </div>
+      <div class="pbod"><div class="peyb">Python · Power BI · Oracle HCM</div><div class="ptit">Workforce Cost Optimization</div><p class="pdesc">Analyzed payroll, overtime, absenteeism, and productivity data across 380 employees. Identified $85K in addressable cost and produced staffing recommendations adopted by HR leadership.</p><div class="tgs"><span class="tg tq">Python</span><span class="tg ti">Power BI</span><span class="tg tg2">Oracle HCM</span><span class="tg tq">HR Analytics</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-q" style="font-size:8.5px">GitHub →</a></div>
+    </div>
+
+    <div class="pcard pc-r rv d3">
+      <div class="pvis pv-leakage">
+        <div class="revmini">
+          <div style="font-family:'DM Mono',monospace;font-size:7.5px;color:rgba(224,82,82,.4);text-transform:uppercase;letter-spacing:2px;margin-bottom:7px">Revenue Leakage · Root-Cause Drill-Down</div>
+          <div class="rm-r"><span class="rm-l">Billing Errors</span><span class="rm-v" style="color:var(--rose)">$620K</span></div>
+          <div class="rm-r"><span class="rm-l">Unapproved Disc.</span><span class="rm-v" style="color:var(--gold)">$480K</span></div>
+          <div class="rm-r"><span class="rm-l">Write-offs</span><span class="rm-v" style="color:var(--gold2)">$390K</span></div>
+          <div class="rm-r"><span class="rm-l">Collection Gaps</span><span class="rm-v" style="color:var(--indigo2)">$310K</span></div>
+          <div class="rm-r"><span class="rm-l">Total Recovered</span><span class="rm-v" style="color:var(--aqua)">$1.8M</span></div>
+        </div>
+      </div>
+      <div class="pbod"><div class="peyb">SQL · Tableau · Python</div><div class="ptit">Revenue Leakage Analyzer</div><p class="pdesc">Root-cause drill-down across 4 leakage categories — billing errors, unapproved discounts, write-offs, and collection gaps. Identified and recovered $1.8M using SQL pipelines and Tableau dashboards.</p><div class="tgs"><span class="tg tr">SQL</span><span class="tg tg2">Tableau</span><span class="tg tq">Python</span><span class="tg tr">Revenue Ops</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-i" style="font-size:8.5px">GitHub →</a></div>
     </div>
   </div>
 </section>
