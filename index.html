@@ -65,7 +65,8 @@ nav.s{padding:12px 64px;background:rgba(6,8,12,.9)}
 
 /* degree + role tags */
 .hl-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:36px;opacity:0;animation:riseIn .7s .64s forwards}
-.htag{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:2px;text-transform:uppercase;padding:5px 13px;border-radius:3px;transition:all .2s}
+.htag{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:2px;text-transform:uppercase;padding:5px 13px;border-radius:3px;transition:all .2s;box-shadow:0 4px 12px rgba(0,0,0,.26),0 0 0 1px rgba(79,95,255,.05)}
+.htag:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.34),0 0 0 1px rgba(79,95,255,.12),0 0 14px rgba(79,95,255,.14)}
 .ht-deg{color:var(--gold2);background:rgba(201,153,58,.1);border:1px solid rgba(201,153,58,.22)}
 .ht-role{color:var(--indigo2);background:rgba(79,95,255,.07);border:1px solid rgba(79,95,255,.2)}
 .ht-role:hover{background:rgba(79,95,255,.14);border-color:var(--indigo);color:#c4c9ff}
@@ -109,7 +110,8 @@ section{padding:108px 64px;position:relative;z-index:1}
 .abt-copy strong{color:var(--gold2);font-weight:600}
 .abt-copy em{color:var(--indigo2);font-style:italic}
 .abt-side{display:flex;flex-direction:column;gap:14px}
-.id-card{position:relative;border:1px solid var(--edge2);border-radius:10px;padding:12px;max-width:260px;background:linear-gradient(160deg,rgba(79,95,255,.14),rgba(0,191,165,.08) 42%,rgba(6,8,12,.92));overflow:hidden}
+.id-card{position:relative;border:1px solid var(--edge2);border-radius:10px;padding:12px;max-width:260px;background:linear-gradient(160deg,rgba(79,95,255,.14),rgba(0,191,165,.08) 42%,rgba(6,8,12,.92));overflow:hidden;box-shadow:0 14px 36px rgba(0,0,0,.34),0 0 0 1px rgba(79,95,255,.08),0 0 28px rgba(79,95,255,.14);transition:transform .24s ease,box-shadow .24s ease}
+.id-card:hover{transform:translateY(-4px);box-shadow:0 22px 46px rgba(0,0,0,.42),0 0 0 1px rgba(79,95,255,.14),0 0 34px rgba(79,95,255,.2)}
 .id-card::before{content:'';position:absolute;inset:-40% -20% auto auto;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(201,153,58,.22),transparent 68%);pointer-events:none}
 .id-card::after{content:'';position:absolute;inset:auto auto -65px -45px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(79,95,255,.32),transparent 70%);pointer-events:none}
 .id-photo{position:relative;aspect-ratio:1/1;border-radius:8px;overflow:hidden;border:1px solid rgba(238,234,224,.2);margin-bottom:10px;z-index:1}
@@ -118,7 +120,8 @@ section{padding:108px 64px;position:relative;z-index:1}
 .id-name{font-family:'Cinzel',serif;font-size:17px;font-weight:700;letter-spacing:.4px;color:var(--pearl);line-height:1.05;margin-bottom:6px;position:relative;z-index:1}
 .id-line{font-size:11px;font-style:italic;line-height:1.55;color:rgba(238,234,224,.72);margin-bottom:9px;position:relative;z-index:1}
 .id-tags{display:flex;flex-wrap:wrap;gap:6px;position:relative;z-index:1}
-.id-tags span{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:1.5px;text-transform:uppercase;padding:5px 10px;border-radius:3px;border:1px solid}
+.id-tags span{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:1.5px;text-transform:uppercase;padding:5px 10px;border-radius:3px;border:1px solid;box-shadow:0 4px 12px rgba(0,0,0,.28),0 0 0 1px rgba(79,95,255,.06),0 0 10px rgba(79,95,255,.07);transition:transform .2s ease,box-shadow .2s ease}
+.id-tags span:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.36),0 0 0 1px rgba(79,95,255,.14),0 0 16px rgba(79,95,255,.16)}
 .idt1{color:var(--indigo2);border-color:rgba(79,95,255,.35);background:rgba(79,95,255,.1)}
 .idt2{color:var(--aqua);border-color:rgba(0,191,165,.35);background:rgba(0,191,165,.08)}
 .idt3{color:var(--gold2);border-color:rgba(201,153,58,.35);background:rgba(201,153,58,.09)}
@@ -134,8 +137,8 @@ section{padding:108px 64px;position:relative;z-index:1}
 
 /* kpi grid */
 .kpig{display:grid;grid-template-columns:1fr 1fr;gap:11px}
-.kc{padding:20px 16px;border-radius:8px;border:1px solid var(--edge);background:rgba(79,95,255,.04);position:relative;overflow:hidden;transition:all .25s}
-.kc:hover{border-color:var(--edge2);transform:translateY(-3px);background:rgba(79,95,255,.09)}
+.kc{padding:20px 16px;border-radius:8px;border:1px solid var(--edge);background:rgba(79,95,255,.04);position:relative;overflow:hidden;box-shadow:0 8px 18px rgba(0,0,0,.2),0 0 0 1px rgba(79,95,255,.04);transition:all .25s}
+.kc:hover{border-color:var(--edge2);transform:translateY(-3px);background:rgba(79,95,255,.09);box-shadow:0 14px 30px rgba(0,0,0,.28),0 0 0 1px rgba(79,95,255,.1),0 0 20px rgba(79,95,255,.12)}
 .kc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
 .k1::before{background:var(--indigo2)}.k2::before{background:var(--aqua)}.k3::before{background:var(--gold2)}.k4::before{background:var(--rose)}.k5::before{background:var(--indigo)}.k6::before{background:var(--gold)}
 .kv{font-family:'Cinzel',serif;font-size:32px;font-weight:700;line-height:1;margin-bottom:4px}
@@ -145,11 +148,12 @@ section{padding:108px 64px;position:relative;z-index:1}
 /* ─── EDUCATION ─── */
 #edu{background:var(--deep)}
 .edu-gr{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--edge)}
-.edc{padding:32px 24px;border-right:1px solid var(--edge);position:relative;overflow:hidden;transition:background .3s}
-.edc:hover{background:rgba(79,95,255,.05)}
+.edc{padding:32px 24px;border-right:1px solid var(--edge);position:relative;overflow:hidden;box-shadow:0 8px 22px rgba(0,0,0,.18),0 0 0 1px rgba(79,95,255,.03);transition:background .3s,transform .3s,box-shadow .3s}
+.edc:hover{background:rgba(79,95,255,.05);transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.24),0 0 0 1px rgba(79,95,255,.08),0 0 18px rgba(79,95,255,.12)}
 .edc:last-child{border-right:none}
 .ewm{font-family:'Cinzel',serif;font-size:68px;font-weight:900;line-height:.85;position:absolute;right:-4px;top:6px;letter-spacing:-2px;pointer-events:none;opacity:.06;color:var(--indigo)}
-.ebdg{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px;display:inline-block;padding:3px 10px;border-radius:3px}
+.ebdg{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px;display:inline-block;padding:3px 10px;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.28),0 0 0 1px rgba(79,95,255,.06),0 0 10px rgba(79,95,255,.07);transition:transform .2s ease,box-shadow .2s ease}
+.ebdg:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.34),0 0 0 1px rgba(79,95,255,.12),0 0 14px rgba(79,95,255,.14)}
 .eb1{color:var(--indigo2);background:rgba(79,95,255,.1);border:1px solid rgba(79,95,255,.2)}
 .eb2{color:var(--aqua);background:rgba(0,191,165,.1);border:1px solid rgba(0,191,165,.2)}
 .eb3{color:var(--gold2);background:rgba(201,153,58,.1);border:1px solid rgba(201,153,58,.2)}
@@ -176,22 +180,23 @@ section{padding:108px 64px;position:relative;z-index:1}
 /* ─── SKILLS ─── */
 #skills{background:var(--surface)}
 .sbento{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
-.sb{border-radius:8px;padding:22px 18px;border:1px solid var(--edge);position:relative;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}
+.sb{border-radius:8px;padding:22px 18px;border:1px solid var(--edge);position:relative;overflow:hidden;box-shadow:0 9px 22px rgba(0,0,0,.2),0 0 0 1px rgba(79,95,255,.03);transition:transform .3s,border-color .3s,box-shadow .3s}
 .sb:hover{transform:translateY(-3px)}
 .sb-w{grid-column:span 2}
 .si{border-color:rgba(79,95,255,.1)}.si:hover{border-color:rgba(79,95,255,.28);box-shadow:0 8px 24px rgba(79,95,255,.06)}
 .sq{border-color:rgba(0,191,165,.1)}.sq:hover{border-color:rgba(0,191,165,.28);box-shadow:0 8px 24px rgba(0,191,165,.06)}
 .sg{border-color:rgba(201,153,58,.1)}.sg:hover{border-color:rgba(201,153,58,.28);box-shadow:0 8px 24px rgba(201,153,58,.06)}
 .sr{border-color:rgba(224,82,82,.1)}.sr:hover{border-color:rgba(224,82,82,.28);box-shadow:0 8px 24px rgba(224,82,82,.06)}
-.scat{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:3px;text-transform:uppercase;margin-bottom:11px;display:inline-block;padding:3px 9px;border-radius:3px}
+.scat{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:3px;text-transform:uppercase;margin-bottom:11px;display:inline-block;padding:3px 9px;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.28),0 0 0 1px rgba(79,95,255,.06),0 0 10px rgba(79,95,255,.07);transition:transform .2s ease,box-shadow .2s ease}
+.scat:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.34),0 0 0 1px rgba(79,95,255,.12),0 0 14px rgba(79,95,255,.14)}
 .si .scat{color:var(--indigo2);background:rgba(79,95,255,.1);border:1px solid rgba(79,95,255,.2)}
 .sq .scat{color:var(--aqua);background:rgba(0,191,165,.1);border:1px solid rgba(0,191,165,.2)}
 .sg .scat{color:var(--gold2);background:rgba(201,153,58,.1);border:1px solid rgba(201,153,58,.2)}
 .sr .scat{color:var(--rose);background:rgba(224,82,82,.1);border:1px solid rgba(224,82,82,.2)}
 .stit{font-family:'Cinzel',serif;font-size:16px;font-weight:600;color:var(--pearl);margin-bottom:13px}
 .pills{display:flex;flex-wrap:wrap;gap:6px}
-.pl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.5px;padding:4px 11px;border-radius:20px;background:rgba(238,234,224,.05);border:1px solid rgba(238,234,224,.09);color:rgba(238,234,224,.58);transition:all .2s;cursor:default}
-.pl:hover{background:rgba(238,234,224,.1);color:var(--pearl);border-color:rgba(238,234,224,.18)}
+.pl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.5px;padding:4px 11px;border-radius:20px;background:rgba(238,234,224,.05);border:1px solid rgba(238,234,224,.09);color:rgba(238,234,224,.58);transition:all .2s;cursor:default;box-shadow:0 4px 10px rgba(0,0,0,.24),0 0 0 1px rgba(79,95,255,.04)}
+.pl:hover{background:rgba(238,234,224,.1);color:var(--pearl);border-color:rgba(238,234,224,.18);transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.32),0 0 0 1px rgba(79,95,255,.1),0 0 12px rgba(79,95,255,.1)}
 .mlist{display:flex;flex-direction:column;gap:10px}
 .mtop{display:flex;justify-content:space-between;margin-bottom:3px}
 .mn{font-size:12px;font-weight:600;color:var(--pearl)}
@@ -208,10 +213,11 @@ section{padding:108px 64px;position:relative;z-index:1}
 .ssub{font-size:12px;color:var(--fog);line-height:1.6}
 
 /* ─── PROJECTS ─── */
-#projects{background:var(--void)}
-.projhero{display:grid;grid-template-columns:1fr 1fr;border-radius:12px;overflow:hidden;border:1px solid rgba(0,191,165,.13);margin-bottom:18px;position:relative;transition:all .3s}
+#projects{background:var(--void);padding-top:92px;padding-bottom:92px}
+#projects .sec-h{margin-bottom:34px}
+.projhero{display:grid;grid-template-columns:1fr 1fr;border-radius:12px;overflow:hidden;border:1px solid rgba(0,191,165,.13);margin-bottom:18px;position:relative;box-shadow:0 14px 34px rgba(0,0,0,.2),0 0 0 1px rgba(0,191,165,.03);transition:all .3s}
 .projhero::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--indigo),var(--aqua),var(--gold))}
-.projhero:hover{border-color:rgba(0,191,165,.28);transform:translateY(-3px)}
+.projhero:hover{border-color:rgba(0,191,165,.28);transform:translateY(-3px);box-shadow:0 22px 44px rgba(0,0,0,.28),0 0 0 1px rgba(0,191,165,.08),0 0 24px rgba(0,191,165,.1)}
 .phv{background:linear-gradient(135deg,#040810 0%,#080f1e 50%,#040810 100%);display:flex;align-items:center;justify-content:center;padding:34px;min-height:330px}
 .cw{width:100%}
 .ct{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--aqua);margin-bottom:16px;text-align:center;opacity:.7}
@@ -229,7 +235,8 @@ section{padding:108px 64px;position:relative;z-index:1}
 .phtit span{color:var(--aqua)}
 .phdesc{font-size:14px;font-style:italic;line-height:1.78;color:rgba(238,234,224,.6);margin-bottom:18px}
 .tgs{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:20px}
-.tg{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1px;padding:4px 11px;border-radius:3px}
+.tg{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1px;padding:4px 11px;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.28),0 0 0 1px rgba(79,95,255,.06),0 0 10px rgba(79,95,255,.07);transition:transform .2s ease,box-shadow .2s ease}
+.tg:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.34),0 0 0 1px rgba(79,95,255,.12),0 0 14px rgba(79,95,255,.14)}
 .ti{background:rgba(79,95,255,.1);color:var(--indigo2);border:1px solid rgba(79,95,255,.2)}
 .tq{background:rgba(0,191,165,.1);color:var(--aqua);border:1px solid rgba(0,191,165,.2)}
 .tg2{background:rgba(201,153,58,.1);color:var(--gold2);border:1px solid rgba(201,153,58,.2)}
@@ -239,10 +246,122 @@ section{padding:108px 64px;position:relative;z-index:1}
 .pcta-i{color:var(--indigo2);border:1px solid rgba(79,95,255,.25);background:rgba(79,95,255,.06)}.pcta-i:hover{background:rgba(79,95,255,.13);border-color:var(--indigo2);transform:translateX(3px);gap:11px}
 .pcta-g{color:var(--gold2);border:1px solid rgba(201,153,58,.25);background:rgba(201,153,58,.06)}.pcta-g:hover{background:rgba(201,153,58,.13);border-color:var(--gold2);transform:translateX(3px);gap:11px}
 
-.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.pcard{border-radius:8px;overflow:hidden;border:1px solid var(--edge);background:rgba(11,14,23,.7);transition:all .3s;position:relative}
+.dpw{font-family:'DM Mono','Courier New',monospace;background:#06080c;border-radius:12px;border:1px solid rgba(0,191,165,.15);overflow:hidden;position:relative;margin-bottom:10px;box-shadow:0 18px 42px rgba(0,0,0,.18),0 0 0 1px rgba(79,95,255,.04)}
+.dpw::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#4f5fff,#00bfa5,#e8bb5a);z-index:2}
+.dpg{display:grid;grid-template-columns:1fr 1fr}
+.dpvis{background:linear-gradient(135deg,#040810,#080f1e 50%,#040810);display:flex;align-items:center;justify-content:center;padding:24px;border-right:1px solid rgba(238,234,224,.05)}
+.dcw{width:100%}
+.dct{font-size:8px;letter-spacing:2px;text-transform:uppercase;color:#00bfa5;margin-bottom:13px;text-align:center;opacity:.7}
+.dbr{display:flex;align-items:center;gap:7px;margin-bottom:7px}
+.dbl{font-size:8px;color:rgba(238,234,224,.3);width:68px;text-align:right;flex-shrink:0}
+.dbt{flex:1;height:15px;background:rgba(238,234,224,.04);border-radius:3px;overflow:hidden}
+.dbf{height:100%;border-radius:3px;position:relative;overflow:hidden}
+.dbf::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.1),transparent);animation:dpSh 3s ease-in-out infinite}
+@keyframes dpSh{0%{transform:translateX(-100%)}100%{transform:translateX(250%)}}
+.dbv{font-size:9px;width:28px}
+.dbaq{background:linear-gradient(90deg,#083040,#00bfa5)}.dvaq{color:#00bfa5}
+.dbin{background:linear-gradient(90deg,#0a3060,#4f5fff)}.dvin{color:#9aa3ff}
+.dbi2{background:linear-gradient(90deg,#082550,#3a4fd4)}.dvi2{color:#9aa3ff}
+.dbi3{background:linear-gradient(90deg,#061a3a,#2a3ab0)}.dvi3{color:#b8bfff}
+.dbi4{background:linear-gradient(90deg,#030f22,#1a258a)}.dvi4{color:#b8bfff}
+.dbi5{background:linear-gradient(90deg,#02080f,#0f1860)}.dvi5{color:#d4d8ff}
+.dcf{font-size:7px;color:rgba(238,234,224,.22);text-align:center;margin-top:9px;letter-spacing:.5px}
+.dpi{padding:22px 24px;background:rgba(6,8,12,.88);display:flex;flex-direction:column;gap:0}
+.dcsbtn{display:inline-flex;align-items:center;gap:6px;font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:#e8bb5a;background:rgba(201,153,58,.08);border:1px solid rgba(201,153,58,.28);border-radius:4px;padding:5px 12px;margin-bottom:12px;cursor:pointer;transition:all .2s;width:fit-content}
+.dcsbtn::before{content:'★';font-size:8px}
+.dcsbtn:hover{background:rgba(201,153,58,.18);border-color:#e8bb5a;transform:translateY(-1px)}
+.dbdg{font-size:8px;letter-spacing:3px;text-transform:uppercase;color:#00bfa5;margin-bottom:10px;display:inline-flex;align-items:center;gap:6px}
+.dbdg::before{content:'';width:12px;height:1px;background:#00bfa5}
+.dptit{font-family:Georgia,serif;font-size:20px;font-weight:700;color:#eeeae0;line-height:1.08;margin-bottom:10px}
+.dptit span{color:#00bfa5}
+.dps-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.dps-block{border-radius:6px;padding:10px 12px;position:relative;overflow:hidden}
+.dps-block::before{content:'';position:absolute;top:0;left:0;bottom:0;width:2px;border-radius:0}
+.dps-prob{background:rgba(224,82,82,.06);border:1px solid rgba(224,82,82,.14)}
+.dps-prob::before{background:#e05252}
+.dps-out{background:rgba(0,191,165,.06);border:1px solid rgba(0,191,165,.14)}
+.dps-out::before{background:#00bfa5}
+.dps-lbl{font-size:7px;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:5px;font-weight:500}
+.dps-prob .dps-lbl{color:#e05252}
+.dps-out .dps-lbl{color:#00bfa5}
+.dps-txt{font-size:11px;line-height:1.6;color:rgba(238,234,224,.58)}
+.dtags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:14px}
+.dtag{font-size:7px;letter-spacing:1px;padding:3px 9px;border-radius:3px;box-shadow:0 3px 8px rgba(0,0,0,.24),0 0 0 1px rgba(79,95,255,.04);transition:transform .18s ease,box-shadow .18s ease}
+.dtag:hover{transform:translateY(-1px);box-shadow:0 6px 14px rgba(0,0,0,.3),0 0 0 1px rgba(79,95,255,.08),0 0 10px rgba(79,95,255,.1)}
+.dtin{background:rgba(79,95,255,.1);color:#8b93ff;border:1px solid rgba(79,95,255,.2)}
+.dtaq{background:rgba(0,191,165,.1);color:#00bfa5;border:1px solid rgba(0,191,165,.2)}
+.dtgd{background:rgba(201,153,58,.1);color:#e8bb5a;border:1px solid rgba(201,153,58,.2)}
+.dtrs{background:rgba(224,82,82,.1);color:#e05252;border:1px solid rgba(224,82,82,.2)}
+.dpbtns{display:flex;gap:8px;flex-wrap:wrap}
+.dpbtn{display:inline-flex;align-items:center;gap:6px;font-size:8px;letter-spacing:1.5px;text-transform:uppercase;padding:8px 14px;border-radius:4px;text-decoration:none;cursor:pointer;transition:all .2s;border:1px solid}
+.dpbaq{color:#00bfa5;border-color:rgba(0,191,165,.25);background:rgba(0,191,165,.06)}
+.dpbaq:hover{background:rgba(0,191,165,.14);border-color:#00bfa5}
+.dpbin{color:#8b93ff;border-color:rgba(79,95,255,.25);background:rgba(79,95,255,.06)}
+.dpbin:hover{background:rgba(79,95,255,.14);border-color:#8b93ff}
+.dmbg{display:none;position:fixed;inset:0;min-height:100vh;background:rgba(4,6,10,.88);align-items:center;justify-content:center;padding:20px;z-index:850;backdrop-filter:blur(10px)}
+.dmbg.open{display:flex}
+.dmc{position:relative;width:100%;max-width:500px;background:linear-gradient(160deg,#0d1120,#080c16);border:1px solid rgba(79,95,255,.22);border-radius:14px;overflow:hidden}
+.dmc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#4f5fff,#00bfa5,#e8bb5a)}
+.dmclose{position:absolute;top:12px;right:12px;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:rgba(238,234,224,.4);border:1px solid rgba(238,234,224,.1);background:rgba(238,234,224,.04);border-radius:4px;padding:5px 10px;cursor:pointer;transition:all .18s;z-index:5}
+.dmclose:hover{color:#eeeae0;background:rgba(238,234,224,.09)}
+.dmhead{display:flex;flex-direction:column;align-items:center;padding:28px 24px 16px;border-bottom:1px solid rgba(238,234,224,.05);background:linear-gradient(180deg,rgba(79,95,255,.07),transparent)}
+.dmicon{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,rgba(79,95,255,.3),rgba(0,191,165,.2));border:1px solid rgba(79,95,255,.3);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:7px}
+.dmey{font-size:8px;letter-spacing:3.5px;text-transform:uppercase;color:rgba(238,234,224,.28)}
+.dmbody{padding:20px 24px 24px;max-height:420px;overflow-y:auto}
+.dmbody::-webkit-scrollbar{width:3px}
+.dmbody::-webkit-scrollbar-thumb{background:rgba(79,95,255,.3);border-radius:3px}
+.dmcsbdg{display:inline-flex;align-items:center;gap:5px;font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:#e8bb5a;background:rgba(201,153,58,.08);border:1px solid rgba(201,153,58,.25);border-radius:3px;padding:3px 9px;margin-bottom:10px}
+.dmcsbdg::before{content:'★'}
+.dmtit{font-family:Georgia,serif;font-size:19px;font-weight:700;color:#eeeae0;line-height:1.1;margin-bottom:14px}
+.dmtit span{color:#00bfa5}
+.dkrow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:18px}
+.dkpi{padding:11px 8px;border-radius:6px;background:rgba(255,255,255,.03);border:1px solid rgba(238,234,224,.07);text-align:center;position:relative;overflow:hidden}
+.dkpi::before{content:'';position:absolute;top:0;left:0;right:0;height:1.5px}
+.dkaq::before{background:#00bfa5}.dkin::before{background:#8b93ff}.dkgd::before{background:#e8bb5a}
+.dkv{font-family:Georgia,serif;font-size:18px;font-weight:700;line-height:1;margin-bottom:3px}
+.dkaq .dkv{color:#00bfa5}.dkin .dkv{color:#8b93ff}.dkgd .dkv{color:#e8bb5a}
+.dkl{font-size:7px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(238,234,224,.38)}
+.dmsec{font-size:8px;letter-spacing:3px;text-transform:uppercase;color:#8b93ff;margin:14px 0 7px;display:flex;align-items:center;gap:8px}
+.dmsec::before{content:'';width:13px;height:1px;background:#4f5fff;flex-shrink:0}
+.dmtxt{font-size:12px;line-height:1.74;color:rgba(238,234,224,.6);margin-bottom:2px}
+.dmbars{background:rgba(255,255,255,.02);border:1px solid rgba(238,234,224,.06);border-radius:6px;padding:11px 12px;margin:10px 0}
+.dmbt{font-size:7px;color:rgba(0,191,165,.48);text-transform:uppercase;letter-spacing:2px;text-align:center;margin-bottom:7px}
+.dmps{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.dmpb{border-radius:6px;padding:10px 12px;position:relative}
+.dmpb::before{content:'';position:absolute;top:0;left:0;bottom:0;width:2px;border-radius:0}
+.dmprob{background:rgba(224,82,82,.06);border:1px solid rgba(224,82,82,.14)}
+.dmprob::before{background:#e05252}
+.dmout{background:rgba(0,191,165,.06);border:1px solid rgba(0,191,165,.14)}
+.dmout::before{background:#00bfa5}
+.dmpbl{font-size:7px;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:5px;font-weight:500}
+.dmprob .dmpbl{color:#e05252}.dmout .dmpbl{color:#00bfa5}
+.dmptxt{font-size:11px;line-height:1.6;color:rgba(238,234,224,.58)}
+.dmtags{display:flex;flex-wrap:wrap;gap:4px;margin:12px 0}
+.dmacts{display:flex;flex-direction:column;gap:7px;margin-top:16px}
+.dmrow{display:flex;gap:7px}
+.dmac{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:8px;letter-spacing:1.8px;text-transform:uppercase;padding:10px 14px;border-radius:4px;text-decoration:none;cursor:pointer;transition:all .2s;flex:1;border:1px solid}
+.dmacpri{color:#04100e;background:#00bfa5;border-color:#00bfa5}
+.dmacpri:hover{background:#1ffcdf}
+.dmacgh{color:#eeeae0;background:rgba(255,255,255,.03);border-color:rgba(238,234,224,.12)}
+.dmacgh:hover{border-color:#8b93ff;color:#8b93ff;background:rgba(79,95,255,.06)}
+.dmacrs{color:#eeeae0;background:rgba(224,82,82,.06);border-color:rgba(224,82,82,.2);width:100%}
+.dmacrs:hover{border-color:#e05252;color:#e05252}
+
+.pgrid{display:grid;grid-template-columns:1fr;gap:10px;align-items:start}
+
+/* Project reveal sequencing */
+.dpw.rv{transform:translateY(30px) scale(.985);transition:opacity .75s ease,transform .95s cubic-bezier(.19,1,.22,1),border-color .28s ease,box-shadow .28s ease}
+.dpw.rv .dpvis,.dpw.rv .dpi{opacity:0;transition:opacity .7s ease,transform .9s cubic-bezier(.19,1,.22,1)}
+.dpw.rv .dpvis{transform:translateX(-20px)}
+.dpw.rv .dpi{transform:translateX(20px)}
+.dpw.rv.on{transform:none}
+.dpw.rv.on .dpvis,.dpw.rv.on .dpi{opacity:1;transform:none}
+.dpw.rv.on .dpvis{transition-delay:.1s}
+.dpw.rv.on .dpi{transition-delay:.2s}
+.dpw:hover{transform:translateY(-2px);border-color:rgba(0,191,165,.28);box-shadow:0 22px 48px rgba(0,0,0,.24),0 0 0 1px rgba(0,191,165,.06)}
+.pcard{border-radius:8px;overflow:hidden;border:1px solid var(--edge);background:rgba(11,14,23,.7);box-shadow:0 10px 24px rgba(0,0,0,.2),0 0 0 1px rgba(79,95,255,.03);transition:all .3s;position:relative}
 .pcard::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;opacity:0;transition:opacity .3s}
-.pcard:hover{transform:translateY(-4px)}.pcard:hover::before{opacity:1}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 18px 34px rgba(0,0,0,.28),0 0 0 1px rgba(79,95,255,.08)}.pcard:hover::before{opacity:1}
 .pc-i::before{background:linear-gradient(90deg,transparent,var(--indigo2),transparent)}.pc-i:hover{border-color:rgba(79,95,255,.2)}
 .pc-g::before{background:linear-gradient(90deg,transparent,var(--gold2),transparent)}.pc-g:hover{border-color:rgba(201,153,58,.2)}
 .pc-q::before{background:linear-gradient(90deg,transparent,var(--aqua),transparent)}.pc-q:hover{border-color:rgba(0,191,165,.2)}
@@ -275,15 +394,16 @@ section{padding:108px 64px;position:relative;z-index:1}
 /* ─── SIX ROLES ─── */
 #roles{background:var(--surface2);background-image:linear-gradient(rgba(6,8,12,.9),rgba(6,8,12,.9)),url('texture__blue_leather.png');background-size:cover}
 .rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.rcard{border-radius:8px;padding:26px 22px;border:1px solid var(--edge);position:relative;overflow:hidden;transition:transform .3s}
-.rcard:hover{transform:translateY(-4px)}
+.rcard{border-radius:8px;padding:26px 22px;border:1px solid var(--edge);position:relative;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.2),0 0 0 1px rgba(79,95,255,.03);transition:transform .3s,box-shadow .3s,border-color .3s}
+.rcard:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(0,0,0,.28),0 0 0 1px rgba(79,95,255,.08)}
 .rcard::before{content:'';position:absolute;top:0;left:0;bottom:0;width:3px}
 .r1::before{background:var(--indigo)}.r2::before{background:var(--aqua)}.r3::before{background:var(--gold)}
 .r4::before{background:var(--rose)}.r5::before{background:var(--indigo2)}.r6::before{background:var(--gold2)}
 .rnum{font-family:'Cinzel',serif;font-size:52px;font-weight:900;line-height:.9;opacity:.07;position:absolute;right:12px;top:8px;pointer-events:none}
 .r1 .rnum{color:var(--indigo)}.r2 .rnum{color:var(--aqua)}.r3 .rnum{color:var(--gold)}
 .r4 .rnum{color:var(--rose)}.r5 .rnum{color:var(--indigo2)}.r6 .rnum{color:var(--gold2)}
-.rbadge{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:13px;display:inline-block;padding:3px 10px;border-radius:3px}
+.rbadge{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:13px;display:inline-block;padding:3px 10px;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.28),0 0 0 1px rgba(79,95,255,.06),0 0 10px rgba(79,95,255,.07);transition:transform .2s ease,box-shadow .2s ease}
+.rbadge:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.34),0 0 0 1px rgba(79,95,255,.12),0 0 14px rgba(79,95,255,.14)}
 .r1 .rbadge{color:var(--indigo2);background:rgba(79,95,255,.1);border:1px solid rgba(79,95,255,.2)}
 .r2 .rbadge{color:var(--aqua);background:rgba(0,191,165,.1);border:1px solid rgba(0,191,165,.2)}
 .r3 .rbadge{color:var(--gold2);background:rgba(201,153,58,.1);border:1px solid rgba(201,153,58,.2)}
@@ -299,35 +419,95 @@ section{padding:108px 64px;position:relative;z-index:1}
 .r3 li::before,.r6 li::before{content:'▸';color:var(--gold2);flex-shrink:0;margin-top:2px;font-size:10px}
 .r4 li::before{content:'▸';color:var(--rose);flex-shrink:0;margin-top:2px;font-size:10px}
 
+/* ─── RESUME ─── */
+#resume{background:linear-gradient(180deg,#0a0d15,#06080c)}
+.res-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:start}
+.res-main,.res-side{border:1px solid var(--edge);border-radius:12px;overflow:hidden;position:relative;background:rgba(11,14,23,.72);box-shadow:0 14px 34px rgba(0,0,0,.22),0 0 0 1px rgba(79,95,255,.04);transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.res-main::before,.res-side::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--indigo2),var(--aqua),var(--gold2))}
+.res-main{padding:28px 28px 24px;box-shadow:0 20px 50px rgba(0,0,0,.22)}
+.res-side{padding:22px 22px 20px}
+.res-main:hover,.res-side:hover{transform:translateY(-3px);border-color:rgba(79,95,255,.22);box-shadow:0 24px 52px rgba(0,0,0,.3),0 0 0 1px rgba(79,95,255,.1),0 0 24px rgba(79,95,255,.1)}
+.res-kicker{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--aqua);margin-bottom:12px;display:inline-flex;align-items:center;gap:8px}
+.res-kicker::before{content:'';width:14px;height:1px;background:var(--aqua)}
+.res-title{font-family:'Cinzel',serif;font-size:clamp(26px,3.5vw,40px);line-height:.98;margin-bottom:10px}
+.res-title span{color:var(--gold2)}
+.res-copy{font-size:14px;line-height:1.8;color:rgba(238,234,224,.66);max-width:720px;margin-bottom:18px}
+.res-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.res-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 16px;border-radius:5px;text-decoration:none;font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:1.8px;text-transform:uppercase;border:1px solid;transition:all .22s}
+.res-btn-primary{background:var(--indigo2);border-color:var(--indigo2);color:var(--void)}
+.res-btn-primary:hover{background:#a8b0ff;border-color:#a8b0ff;transform:translateY(-2px)}
+.res-btn-ghost{background:rgba(255,255,255,.03);border-color:rgba(238,234,224,.12);color:var(--pearl)}
+.res-btn-ghost:hover{border-color:var(--aqua);color:var(--aqua);transform:translateY(-2px)}
+.res-panels{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.res-panel{border:1px solid rgba(238,234,224,.07);border-radius:8px;padding:16px 16px 14px;background:rgba(255,255,255,.02);box-shadow:0 8px 20px rgba(0,0,0,.18),0 0 0 1px rgba(79,95,255,.03);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.res-panel:hover{transform:translateY(-2px);border-color:rgba(79,95,255,.2);box-shadow:0 14px 28px rgba(0,0,0,.24),0 0 0 1px rgba(79,95,255,.08)}
+.res-label{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--indigo2);margin-bottom:10px}
+.res-list{display:flex;flex-direction:column;gap:8px}
+.res-list div{font-size:12px;line-height:1.55;color:rgba(238,234,224,.62);padding-bottom:8px;border-bottom:1px solid rgba(238,234,224,.05)}
+.res-list div:last-child{border-bottom:none;padding-bottom:0}
+.res-list strong{color:var(--pearl);font-weight:600}
+.res-statgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px}
+.res-stat{border:1px solid rgba(238,234,224,.08);border-radius:8px;padding:15px 12px;background:rgba(255,255,255,.02)}
+.res-stat strong{display:block;font-family:'Cinzel',serif;font-size:26px;line-height:1;color:var(--gold2);margin-bottom:4px}
+.res-stat span{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:1.6px;text-transform:uppercase;color:var(--fog)}
+.res-note{font-size:12px;line-height:1.7;color:rgba(238,234,224,.58);margin-bottom:16px}
+.res-mini{display:flex;flex-wrap:wrap;gap:6px}
+.res-mini span{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:1.3px;text-transform:uppercase;padding:4px 9px;border-radius:999px;border:1px solid rgba(238,234,224,.1);background:rgba(255,255,255,.03);color:rgba(238,234,224,.62);box-shadow:0 4px 12px rgba(0,0,0,.28),0 0 0 1px rgba(79,95,255,.06),0 0 10px rgba(79,95,255,.08);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease,color .2s ease}
+.res-mini span:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.36),0 0 0 1px rgba(79,95,255,.14),0 0 16px rgba(79,95,255,.18);border-color:rgba(79,95,255,.28);color:var(--pearl)}
+.resume-fab{position:fixed;right:20px;bottom:20px;z-index:700;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 15px;border-radius:999px;text-decoration:none;font-family:'DM Mono',monospace;font-size:8px;letter-spacing:1.8px;text-transform:uppercase;background:rgba(79,95,255,.92);color:var(--void);border:1px solid rgba(168,176,255,.65);box-shadow:0 14px 30px rgba(0,0,0,.28),0 0 24px rgba(79,95,255,.26);transition:transform .22s ease,box-shadow .22s ease,background .22s ease}
+.resume-fab:hover{transform:translateY(-2px);background:#a8b0ff;box-shadow:0 18px 36px rgba(0,0,0,.34),0 0 28px rgba(79,95,255,.34)}
+
+/* Animated gradient for resume download actions */
+.dl-live{
+  color:var(--void) !important;
+  border-color:rgba(238,234,224,.35) !important;
+  background:linear-gradient(120deg,#a8b0ff 0%,#00bfa5 45%,#e8bb5a 100%);
+  background-size:220% 220%;
+  box-shadow:0 0 0 1px rgba(238,234,224,.08),0 10px 28px rgba(0,0,0,.25),0 0 32px rgba(79,95,255,.2);
+  animation:liveGrad 5s ease infinite,livePulse 2.2s ease-in-out infinite;
+}
+.dl-live:hover{
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:0 0 0 1px rgba(238,234,224,.15),0 16px 34px rgba(0,0,0,.3),0 0 40px rgba(79,95,255,.32);
+}
+
 /* ─── TECH ─── */
 #tech{background:var(--deep);padding:80px 64px}
 .tg-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;max-width:960px;margin:0 auto}
-.tnode{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px 8px;border-radius:8px;border:1px solid var(--edge);background:rgba(238,234,224,.02);gap:7px;transition:all .3s}
-.tnode:hover{transform:translateY(-3px) scale(1.04);border-color:var(--edge2);background:rgba(79,95,255,.05)}
+.tnode{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px 8px;border-radius:8px;border:1px solid var(--edge);background:rgba(238,234,224,.02);gap:7px;box-shadow:0 8px 18px rgba(0,0,0,.17),0 0 0 1px rgba(79,95,255,.03);transition:all .3s}
+.tnode:hover{transform:translateY(-3px) scale(1.04);border-color:var(--edge2);background:rgba(79,95,255,.05);box-shadow:0 14px 28px rgba(0,0,0,.24),0 0 0 1px rgba(79,95,255,.1),0 0 16px rgba(79,95,255,.1)}
 .tic{font-size:23px}.tnm{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--fog);text-align:center}
 
 /* ─── CONTACT ─── */
 #contact{background:var(--void);text-align:center;overflow:hidden}
 #contact::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(79,95,255,.07) 0%,transparent 65%);pointer-events:none}
-.ctbig{font-family:'Cinzel',serif;font-size:clamp(42px,8vw,90px);font-weight:900;line-height:.93;color:var(--pearl);margin-bottom:22px;letter-spacing:-1px}
-.ctbig span{color:var(--indigo2)}
-.ctsub{font-size:16.5px;font-style:italic;color:rgba(238,234,224,.52);max-width:500px;margin:0 auto 48px;line-height:1.8}
-.ctlinks{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:2}
+.ctbig{font-family:'Cinzel',serif;font-size:clamp(42px,8vw,90px);font-weight:900;line-height:.93;margin-bottom:22px;letter-spacing:-1px;color:var(--pearl)}
+.ctbig span{background:linear-gradient(120deg,#a8b0ff 0%,#00bfa5 45%,#e8bb5a 100%);background-size:220% 220%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:liveGrad 5s ease infinite,livePulse 2.2s ease-in-out infinite}
+.ctsub{font-size:16px;font-style:italic;color:rgba(238,234,224,.52);max-width:560px;margin:0 auto 20px;line-height:1.8}
+.ctmail{display:inline-flex;align-items:center;gap:10px;margin:0 auto 28px;padding:8px 14px;border-radius:999px;border:1px solid rgba(238,234,224,.11);background:rgba(255,255,255,.03);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1.3px;color:rgba(238,234,224,.68)}
+.ctmail strong{color:var(--pearl);font-weight:500}
+.ctlinks{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:2;margin-bottom:12px}
+.ctaux{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;position:relative;z-index:2}
 .clink{display:inline-flex;align-items:center;gap:9px;font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;padding:13px 26px;border-radius:5px;text-decoration:none;transition:all .25s cubic-bezier(.34,1.56,.64,1)}
 .clink:hover{transform:translateY(-3px)}
 .cl-ind{color:var(--void);background:var(--indigo2);box-shadow:0 0 22px rgba(79,95,255,.28)}.cl-ind:hover{background:#a8b0ff;box-shadow:0 0 38px rgba(79,95,255,.5)}
 .cl-gho{color:var(--pearl);border:1px solid rgba(238,234,224,.13);background:rgba(255,255,255,.04)}.cl-gho:hover{border-color:var(--aqua);color:var(--aqua);background:rgba(0,191,165,.05)}
 
-footer{padding:20px 64px;background:rgba(6,8,12,.98);border-top:1px solid var(--edge);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;position:relative;z-index:1}
-footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.22)}
+footer{padding:20px 64px;background:rgba(6,8,12,.98);border-top:1px solid var(--edge);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;position:relative;z-index:1}
+footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.28)}
+.fmeta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.fchip{display:inline-flex;align-items:center;gap:6px;padding:0;border:none;border-radius:0;background:transparent;font-family:'DM Mono',monospace;font-size:8px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(238,234,224,.58);text-decoration:none;transition:color .2s}
+.fchip:hover{color:var(--pearl)}
 .fr{font-family:'Cinzel',serif;font-size:10.5px;color:rgba(79,95,255,.38);letter-spacing:2.5px}
 
 @keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes liveGrad{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes livePulse{0%,100%{filter:saturate(1) brightness(1)}50%{filter:saturate(1.1) brightness(1.04)}}
 
-@media(max-width:1100px){.sbento{grid-template-columns:repeat(2,1fr)}.tg-grid{grid-template-columns:repeat(4,1fr)}.edu-gr{grid-template-columns:1fr 1fr}}
-@media(max-width:900px){nav{padding:14px 22px}nav.s{padding:11px 22px}section{padding:80px 22px}#hero{grid-template-columns:1fr}.hl-col{padding:110px 22px 56px}.abt-grid{grid-template-columns:1fr;gap:42px}.projhero{grid-template-columns:1fr}.pgrid{grid-template-columns:1fr}.rgrid{grid-template-columns:1fr 1fr}.sbento{grid-template-columns:1fr}.sb-w{grid-column:span 1}footer{flex-direction:column;text-align:center;padding:16px}}
-@media(max-width:560px){.nlinks{display:none}.rgrid{grid-template-columns:1fr}.edu-gr{grid-template-columns:1fr}.tg-grid{grid-template-columns:repeat(3,1fr)}.kpig{grid-template-columns:1fr}}
+@media(max-width:1100px){.sbento{grid-template-columns:repeat(2,1fr)}.tg-grid{grid-template-columns:repeat(4,1fr)}.edu-gr{grid-template-columns:1fr 1fr}.dpg{grid-template-columns:1fr}.dpvis{border-right:none;border-bottom:1px solid rgba(238,234,224,.05);min-height:220px}.dpi{padding:20px 22px}.res-grid{grid-template-columns:1fr}.res-panels{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){nav{padding:14px 22px}nav.s{padding:11px 22px}section{padding:80px 22px}#hero{grid-template-columns:1fr}.hl-col{padding:110px 22px 56px}.abt-grid{grid-template-columns:1fr;gap:42px}.projhero{grid-template-columns:1fr}.pgrid{grid-template-columns:1fr}.rgrid{grid-template-columns:1fr 1fr}.sbento{grid-template-columns:1fr}.sb-w{grid-column:span 1}footer{flex-direction:column;text-align:center;padding:16px}.fmeta{justify-content:center}#projects{padding-top:74px;padding-bottom:74px}.dps-row,.dmps,.dkrow,.res-panels,.res-statgrid{grid-template-columns:1fr}.dpw.rv .dpvis,.dpw.rv .dpi{transform:none}.dmbody{max-height:68vh;padding:18px 18px 20px}.dmhead{padding:24px 18px 14px}.res-main,.res-side{padding-left:20px;padding-right:20px}}
+@media(max-width:560px){.nlinks{display:none}.rgrid{grid-template-columns:1fr}.edu-gr{grid-template-columns:1fr}.tg-grid{grid-template-columns:repeat(3,1fr)}.kpig{grid-template-columns:1fr}.dpvis{padding:18px;min-height:0}.dpi{padding:18px}.dptit{font-size:18px}.dct,.dbdg,.dps-lbl,.dcsbtn{letter-spacing:1.6px}.dbr{gap:6px}.dbl{width:62px;font-size:7px}.dbv{width:34px;font-size:8px}.dtag{font-size:6.5px;padding:3px 7px}.dpbtns,.dmrow,.res-actions,.ctlinks,.ctaux{flex-direction:column}.dpbtn,.dmac,.res-btn,.clink{width:100%;justify-content:center}.dmicon{width:42px;height:42px;font-size:18px}.dmtit{font-size:17px}.dmbg{padding:12px}.dmc{max-width:none}.dkpi{padding:10px 6px}.res-main,.res-side{padding:18px}.res-title{font-size:22px}.res-copy{font-size:13px}.resume-fab{right:12px;left:12px;bottom:12px}.ctmail{display:flex;justify-content:center;word-break:break-all}}
 </style>
 </head>
 <body>
@@ -346,6 +526,7 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.2
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#roles">Experience</a></li>
+    <li><a href="#resume">Resume</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="#contact" class="ncta">Hire Me</a>
@@ -356,8 +537,8 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.2
   <div class="hl-col">
     <div class="hl-kicker">MBA Analytics · Available Now</div>
     <h1 class="hl-name">LESLEY<br/><span class="grad">SHIRI</span></h1>
-    <div class="hl-sub">Data Strategist · Finance Intelligence · Analytics</div>
-    <p class="hl-pitch"><strong>MBA · MCom · BCom · National Diploma.</strong> Four qualifications, six professional roles, 8+ years transforming financial complexity into decisions that drive performance, strengthen controls, and grow revenue.</p>
+    <div class="hl-sub">Business Analytics · Finance Intelligence · Decision Support</div>
+    <p class="hl-pitch"><strong>MBA · MCom · BCom · National Diploma.</strong> Four qualifications, six professional roles, and 8+ years turning financial and operational complexity into reporting, controls, and decisions leaders can act on.</p>
     <div class="hl-tags">
       <span class="htag ht-deg">MBA — Clarkson University</span>
       <span class="htag ht-deg">MCom · BCom · N.Dip</span>
@@ -369,8 +550,9 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.2
       <span class="htag ht-role">Accountant</span>
     </div>
     <div class="hl-btns">
-      <a href="#projects" class="bprimary">Explore My Work</a>
-      <a href="#contact" class="bghost">Let's Connect</a>
+      <a href="#projects" class="bprimary">View Strategic Portfolio</a>
+      <a href="#resume" class="bghost">Review Executive Resume</a>
+      <a href="#contact" class="bghost">Schedule Hiring Conversation</a>
     </div>
   </div>
 
@@ -390,9 +572,9 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.2
   <div class="rv"><div class="sec-eye">01 — Identity</div><h2 class="sec-h">Where financial precision<br/>meets <em>data intelligence</em></h2></div>
   <div class="abt-grid">
     <div class="abt-copy rv d1">
-      <p>I'm a <strong>Business and Finance Analyst</strong> with <strong>8+ years of accounting and finance experience</strong> across six professional roles — spanning payroll, accounting, finance analysis, revenue analytics, operations, and business analysis. I transform complex numbers into clear reporting, actionable insights, and measurable business outcomes.</p>
-      <p>My academic foundation spans a <strong>National Diploma in Accounting</strong> (Masvingo Polytechnic, Zimbabwe), a <strong>BCom Honours in Accounting</strong> and <strong>Master of Commerce</strong> (Midlands State University, Zimbabwe), and an <strong>MBA in Business Analytics</strong> at <strong>Clarkson University, New York</strong>.</p>
-      <p>I combine deep <em>accounting rigour</em> with modern machine learning — from predicting diabetes outcomes in 100,000 patient records to building payroll audit pipelines that catch what others miss. Four qualifications, six roles, one mission.</p>
+      <p>I'm a <strong>Business and Finance Analyst</strong> with <strong>8+ years of experience</strong> across payroll, accounting, finance analysis, revenue analytics, operations, and business analysis. My work turns dense business data into reporting, controls, and recommendations that improve decision quality.</p>
+      <p>My academic foundation combines a <strong>National Diploma in Accounting</strong> (Masvingo Polytechnic, Zimbabwe), a <strong>BCom Honours in Accounting</strong>, a <strong>Master of Commerce</strong> (Midlands State University, Zimbabwe), and an <strong>MBA in Business Analytics</strong> at <strong>Clarkson University, New York</strong>.</p>
+      <p>I bring together <em>accounting rigour</em>, operational understanding, and applied analytics, from healthcare prediction models to payroll audit workflows and executive revenue reporting. Four qualifications, six roles, one clear value proposition.</p>
       <div style="margin-top:26px">
         <div class="tl-head">Education</div>
         <div class="tl-row"><div class="tl-yr">MBA</div><div class="tl-bl"><div class="tl-rl">MBA — Business Analytics</div><div class="tl-co">Clarkson University, New York · In Progress</div></div></div>
@@ -492,155 +674,569 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.2
 <section id="projects">
   <div class="rv"><div class="sec-eye">04 — Work</div><h2 class="sec-h">Projects that<br/><em>prove the point</em></h2></div>
 
-  <div class="projhero rv d1">
-    <div class="phv">
-      <div class="cw">
-        <div class="ct">Diabetes Prediction — Model Accuracy (100K patients · Alabama & Wyoming · 2015–2018)</div>
-        <div class="cr"><span class="cm">Neural Net</span><div class="ctr"><div class="cf" style="width:87%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="cv" style="color:var(--aqua)">0.87</span></div>
-        <div class="cr"><span class="cm">Grad Boost</span><div class="ctr"><div class="cf" style="width:86%;background:linear-gradient(90deg,#0a3060,#4f5fff)"></div></div><span class="cv" style="color:#9aa3ff">0.86</span></div>
-        <div class="cr"><span class="cm">Rand Forest</span><div class="ctr"><div class="cf" style="width:85%;background:linear-gradient(90deg,#082550,#3a4fd4)"></div></div><span class="cv" style="color:#9aa3ff">0.85</span></div>
-        <div class="cr"><span class="cm">SVM</span><div class="ctr"><div class="cf" style="width:83%;background:linear-gradient(90deg,#061a3a,#2a3ab0)"></div></div><span class="cv" style="color:#b8bfff">0.83</span></div>
-        <div class="cr"><span class="cm">Log. Reg.</span><div class="ctr"><div class="cf" style="width:82%;background:linear-gradient(90deg,#030f22,#1a258a)"></div></div><span class="cv" style="color:#b8bfff">0.82</span></div>
-        <div class="cr"><span class="cm">Dec. Tree</span><div class="ctr"><div class="cf" style="width:78%;background:linear-gradient(90deg,#02080f,#0f1860)"></div></div><span class="cv" style="color:#d4d8ff">0.78</span></div>
-        <div style="margin-top:14px;text-align:center"><span style="font-family:'DM Mono',monospace;font-size:7.5px;color:rgba(238,234,224,.28)">90,601 Non-Diabetic vs 8,499 Diabetic · SMOTE Balanced · 5-Fold GridSearchCV</span></div>
+  <div class="dpw rv d1">
+    <div class="dpg">
+      <div class="dpvis">
+        <div class="dcw">
+          <div class="dct">Diabetes Prediction — Model Accuracy (100K patients · 2015–2018)</div>
+          <div class="dbr"><span class="dbl">Neural Net</span><div class="dbt"><div class="dbf dbaq" style="width:87%"></div></div><span class="dbv dvaq">0.87</span></div>
+          <div class="dbr"><span class="dbl">Grad. Boost</span><div class="dbt"><div class="dbf dbin" style="width:86%"></div></div><span class="dbv dvin">0.86</span></div>
+          <div class="dbr"><span class="dbl">Rand. Forest</span><div class="dbt"><div class="dbf dbi2" style="width:85%"></div></div><span class="dbv dvi2">0.85</span></div>
+          <div class="dbr"><span class="dbl">SVM</span><div class="dbt"><div class="dbf dbi3" style="width:83%"></div></div><span class="dbv dvi3">0.83</span></div>
+          <div class="dbr"><span class="dbl">Log. Reg.</span><div class="dbt"><div class="dbf dbi4" style="width:82%"></div></div><span class="dbv dvi4">0.82</span></div>
+          <div class="dbr"><span class="dbl">Dec. Tree</span><div class="dbt"><div class="dbf dbi5" style="width:78%"></div></div><span class="dbv dvi5">0.78</span></div>
+          <div class="dcf">90,601 Non-Diabetic · 8,499 Diabetic · SMOTE · 5-Fold GridSearchCV</div>
+        </div>
+      </div>
+
+      <div class="dpi">
+        <button class="dcsbtn" id="openDiabetesModal">Case Study</button>
+        <div class="dbdg">Machine Learning · Healthcare · Featured</div>
+        <div class="dptit">Diabetes Dataset<br/><span>Prediction Model</span></div>
+
+        <div class="dps-row">
+          <div class="dps-block dps-prob">
+            <div class="dps-lbl">The Problem</div>
+            <div class="dps-txt">Patient data scattered across silos — no model to flag high-risk individuals before costly hospitalisations.</div>
+          </div>
+          <div class="dps-block dps-out">
+            <div class="dps-lbl">The Outcome</div>
+            <div class="dps-txt">Neural Net hit 0.87 AUC. HbA1c &amp; blood glucose identified as top predictors, enabling early intervention at scale.</div>
+          </div>
+        </div>
+
+        <div class="dtags">
+          <span class="dtag dtin">Python</span>
+          <span class="dtag dtin">Scikit-Learn</span>
+          <span class="dtag dtaq">Pandas</span>
+          <span class="dtag dtaq">SMOTE</span>
+          <span class="dtag dtgd">GridSearchCV</span>
+          <span class="dtag dtgd">Neural Network</span>
+          <span class="dtag dtrs">Random Forest</span>
+        </div>
+        <div class="dpbtns">
+          <a href="LesleyShiri_final_project_report_2025.pdf" download class="dpbtn dpbaq">↓ Download Report</a>
+          <a href="https://github.com/lesleyshiri" target="_blank" class="dpbtn dpbin">GitHub →</a>
+        </div>
       </div>
     </div>
-    <div class="phb">
-      <div class="phbadge">Machine Learning · Healthcare · Featured</div>
-      <h2 class="phtit">Diabetes Dataset<br/><span>Prediction Model</span></h2>
-      <p class="phdesc">Binary classification across 100,000 patient records (Alabama &amp; Wyoming, 2015–2018). Six models evaluated — Random Forest achieved F1 of 0.72. HbA1c (0.49) and blood glucose (0.40) were the dominant predictors.</p>
-      <div class="tgs"><span class="tg ti">Python</span><span class="tg ti">Scikit-Learn</span><span class="tg tq">Pandas</span><span class="tg tq">SMOTE</span><span class="tg tg2">GridSearchCV</span><span class="tg tg2">Neural Network</span><span class="tg tr">Random Forest</span></div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap">
-        <a href="LesleyShiri_final_project_report_2025.pdf" download class="pcta pcta-q">Download Report ↓</a>
-        <a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-i">GitHub →</a>
+  </div>
+
+  <div class="dmbg" id="diabetesModal">
+    <div class="dmc">
+      <button class="dmclose" id="closeDiabetesModal">✕ Close</button>
+      <div class="dmhead">
+        <div class="dmicon">🩺</div>
+        <div class="dmey">Project Preview</div>
+      </div>
+      <div class="dmbody">
+        <div class="dmcsbdg">Case Study</div>
+        <div class="dmtit">Diabetes Prediction &amp;<br/><span>Healthcare ML Analysis</span></div>
+        <div class="dkrow">
+          <div class="dkpi dkaq"><div class="dkv">100K</div><div class="dkl">Patients</div></div>
+          <div class="dkpi dkin"><div class="dkv">0.87</div><div class="dkl">Best AUC</div></div>
+          <div class="dkpi dkgd"><div class="dkv">87%</div><div class="dkl">Neural Net</div></div>
+        </div>
+
+        <div class="dmps">
+          <div class="dmpb dmprob">
+            <div class="dmpbl">The Problem</div>
+            <div class="dmptxt">Healthcare providers lacked a predictive tool to identify at-risk diabetic patients early. Data spanning Alabama &amp; Wyoming (2015–2018) existed in silos with no consolidated model.</div>
+          </div>
+          <div class="dmpb dmout">
+            <div class="dmpbl">The Outcome</div>
+            <div class="dmptxt">Neural Network topped at 0.87 AUC. HbA1c (0.49 importance) and blood glucose (0.40) emerged as dominant predictors — enabling preventative care decisions at scale.</div>
+          </div>
+        </div>
+
+        <div class="dmsec">My Approach</div>
+        <div class="dmtxt">Built a six-model binary classification pipeline on 100,000 records. Applied SMOTE to address the severe class imbalance. Used 5-fold GridSearchCV to tune each model for optimal recall on the minority class.</div>
+
+        <div class="dmbars">
+          <div class="dmbt">Model Accuracy · SMOTE Balanced · 5-Fold GridSearchCV</div>
+          <div class="dbr"><span class="dbl">Neural Net</span><div class="dbt"><div class="dbf dbaq" style="width:87%"></div></div><span class="dbv dvaq">0.87</span></div>
+          <div class="dbr"><span class="dbl">Grad. Boost</span><div class="dbt"><div class="dbf dbin" style="width:86%"></div></div><span class="dbv dvin">0.86</span></div>
+          <div class="dbr"><span class="dbl">Rand. Forest</span><div class="dbt"><div class="dbf dbi2" style="width:85%"></div></div><span class="dbv dvi2">0.85</span></div>
+          <div class="dbr"><span class="dbl">SVM</span><div class="dbt"><div class="dbf dbi3" style="width:83%"></div></div><span class="dbv dvi3">0.83</span></div>
+          <div class="dbr"><span class="dbl">Log. Reg.</span><div class="dbt"><div class="dbf dbi4" style="width:82%"></div></div><span class="dbv dvi4">0.82</span></div>
+          <div class="dbr"><span class="dbl">Dec. Tree</span><div class="dbt"><div class="dbf dbi5" style="width:78%"></div></div><span class="dbv dvi5">0.78</span></div>
+        </div>
+
+        <div class="dmtags">
+          <span class="dtag dtin">Python</span><span class="dtag dtin">Scikit-Learn</span>
+          <span class="dtag dtaq">Pandas</span><span class="dtag dtaq">SMOTE</span>
+          <span class="dtag dtgd">GridSearchCV</span><span class="dtag dtgd">Neural Network</span>
+          <span class="dtag dtrs">Random Forest</span><span class="dtag dtrs">Healthcare Analytics</span>
+          <span class="dtag dtin">Binary Classification</span>
+        </div>
+
+        <div class="dmsec">Resources &amp; Downloads</div>
+        <div class="dmacts">
+          <div class="dmrow"><a href="LesleyShiri_final_project_report_2025.pdf" download class="dmac dmacpri">↓ Download Report PDF</a></div>
+          <div class="dmrow">
+            <a href="https://github.com/lesleyshiri" target="_blank" class="dmac dmacgh">GitHub →</a>
+            <a href="https://www.linkedin.com/in/lesley-lonely-shiri" target="_blank" class="dmac dmacgh">LinkedIn →</a>
+          </div>
+          <div class="dmrow"><a href="mailto:lesleylonelyshiri88@gmail.com" class="dmac dmacrs" style="flex:unset;width:100%">Email About This Project</a></div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="pgrid">
-    <div class="pcard pc-q rv d1">
-      <div class="pvis pv-pay">
-        <div class="paybars">
-          <div class="pb-t">Payroll Anomaly Scanner · 724 Records</div>
-          <div class="pb-r"><span class="pb-l">Excessive OT</span><div class="pb-tr"><div class="pb-f" style="width:100%;background:var(--rose)"></div></div><span class="pb-n">12</span></div>
-          <div class="pb-r"><span class="pb-l">Duplicates</span><div class="pb-tr"><div class="pb-f" style="width:67%;background:var(--gold)"></div></div><span class="pb-n">8</span></div>
-          <div class="pb-r"><span class="pb-l">Retro Adj.</span><div class="pb-tr"><div class="pb-f" style="width:67%;background:var(--gold2)"></div></div><span class="pb-n">8</span></div>
-          <div class="pb-r"><span class="pb-l">Code Mismatch</span><div class="pb-tr"><div class="pb-f" style="width:50%;background:var(--aqua)"></div></div><span class="pb-n">6</span></div>
-          <div class="pb-r"><span class="pb-l">Missing Deduct</span><div class="pb-tr"><div class="pb-f" style="width:17%;background:var(--indigo2)"></div></div><span class="pb-n">2</span></div>
+    <div class="dpw rv d1" style="grid-column:1/-1;margin-bottom:0">
+      <div class="dpg">
+        <div class="dpvis">
+          <div class="dcw">
+            <div class="dct">Payroll Anomaly Scanner — Audit Flags (724 records · 120 employees)</div>
+            <div class="dbr"><span class="dbl">Excessive OT</span><div class="dbt"><div class="dbf" style="width:100%;background:linear-gradient(90deg,#3a0a12,#e05252)"></div></div><span class="dbv" style="color:#e05252">12</span></div>
+            <div class="dbr"><span class="dbl">Duplicates</span><div class="dbt"><div class="dbf" style="width:67%;background:linear-gradient(90deg,#352207,#c9993a)"></div></div><span class="dbv" style="color:#e8bb5a">8</span></div>
+            <div class="dbr"><span class="dbl">Retro Adj.</span><div class="dbt"><div class="dbf" style="width:67%;background:linear-gradient(90deg,#4a3008,#e8bb5a)"></div></div><span class="dbv" style="color:#e8bb5a">8</span></div>
+            <div class="dbr"><span class="dbl">Code Mismatch</span><div class="dbt"><div class="dbf" style="width:50%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">6</span></div>
+            <div class="dbr"><span class="dbl">Missing Ded.</span><div class="dbt"><div class="dbf" style="width:17%;background:linear-gradient(90deg,#0a3060,#4f5fff)"></div></div><span class="dbv" style="color:#8b93ff">2</span></div>
+            <div class="dcf">Oracle Cloud HCM · 5 anomaly types · $130K+ irregular payroll exposure flagged</div>
+          </div>
+        </div>
+
+        <div class="dpi">
+          <button class="dcsbtn" id="openPayrollModal">Case Study</button>
+          <div class="dbdg">Python · Payroll Audit · Featured</div>
+          <div class="dptit">Payroll Analytics<br/><span>Pipeline</span></div>
+
+          <div class="dps-row">
+            <div class="dps-block dps-prob">
+              <div class="dps-lbl">The Problem</div>
+              <div class="dps-txt">Manual payroll review made it hard to catch duplicate pay, overtime abuse, and coding errors before payroll closed.</div>
+            </div>
+            <div class="dps-block dps-out">
+              <div class="dps-lbl">The Outcome</div>
+              <div class="dps-txt">Python audit rules flagged 36 high-risk anomalies and surfaced $130K+ in irregular payroll exposure for review.</div>
+            </div>
+          </div>
+
+          <div class="dtags">
+            <span class="dtag dtin">Python</span>
+            <span class="dtag dtin">Pandas</span>
+            <span class="dtag dtaq">Oracle HCM</span>
+            <span class="dtag dtaq">Audit Rules</span>
+            <span class="dtag dtgd">Payroll QA</span>
+            <span class="dtag dtgd">Automation</span>
+            <span class="dtag dtrs">Anomaly Detection</span>
+          </div>
+          <div class="dpbtns">
+            <a href="https://github.com/lesleyshiri" target="_blank" class="dpbtn dpbin">GitHub →</a>
+          </div>
         </div>
       </div>
-      <div class="pbod"><div class="peyb">Python · Oracle Cloud · Automation</div><div class="ptit">Payroll Analytics Pipeline</div><p class="pdesc">Python audit pipeline detecting 5 anomaly types across 120 employees. Flagged $130K+ in irregular payroll. Built on 8+ years processing 500+ employees in Oracle HCM.</p><div class="tgs"><span class="tg tq">Python</span><span class="tg ti">Pandas</span><span class="tg tg2">Oracle HCM</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-q" style="font-size:8.5px">GitHub →</a></div>
     </div>
 
-    <div class="pcard pc-g rv d2">
-      <div class="pvis pv-rev">
-        <div class="revmini">
-          <div style="font-family:'DM Mono',monospace;font-size:7.5px;color:rgba(201,153,58,.4);text-transform:uppercase;letter-spacing:2px;margin-bottom:7px">Revenue KPI · $50M+ Tracked</div>
-          <div class="rm-r"><span class="rm-l">QoQ Growth</span><span class="rm-v" style="color:var(--aqua)">↑14%</span></div>
-          <div class="rm-r"><span class="rm-l">Collection Rate</span><span class="rm-v" style="color:var(--gold2)">97%</span></div>
-          <div class="rm-r"><span class="rm-l">ROI Multiple</span><span class="rm-v" style="color:var(--indigo2)">4.2×</span></div>
-          <div class="rm-r"><span class="rm-l">Forecast Acc.</span><span class="rm-v" style="color:var(--aqua)">94%</span></div>
-          <div class="rm-r"><span class="rm-l">Leakage Found</span><span class="rm-v" style="color:var(--rose)">$2M+</span></div>
+    <div class="dmbg" id="payrollModal">
+      <div class="dmc">
+        <button class="dmclose" id="closePayrollModal">✕ Close</button>
+        <div class="dmhead">
+          <div class="dmicon">💼</div>
+          <div class="dmey">Project Preview</div>
+        </div>
+        <div class="dmbody">
+          <div class="dmcsbdg">Case Study</div>
+          <div class="dmtit">Payroll Audit &amp;<br/><span>Analytics Pipeline</span></div>
+          <div class="dkrow">
+            <div class="dkpi dkaq"><div class="dkv">724</div><div class="dkl">Records</div></div>
+            <div class="dkpi dkin"><div class="dkv">120</div><div class="dkl">Employees</div></div>
+            <div class="dkpi dkgd"><div class="dkv">$130K+</div><div class="dkl">Exposure</div></div>
+          </div>
+
+          <div class="dmps">
+            <div class="dmpb dmprob">
+              <div class="dmpbl">The Problem</div>
+              <div class="dmptxt">Payroll teams needed a faster way to identify duplicates, retro anomalies, coding mismatches, and deduction issues before payments were finalized.</div>
+            </div>
+            <div class="dmpb dmout">
+              <div class="dmpbl">The Outcome</div>
+              <div class="dmptxt">A Python-led audit pipeline caught 5 anomaly categories and prioritized the highest-risk issues for human review, reducing manual checking time and missed exceptions.</div>
+            </div>
+          </div>
+
+          <div class="dmsec">My Approach</div>
+          <div class="dmtxt">Built a rules-based payroll QA workflow over Oracle Cloud extracts, using Pandas transformations and exception logic to isolate excessive overtime, duplicate entries, retro adjustments, code mismatches, and missing deductions.</div>
+
+          <div class="dmbars">
+            <div class="dmbt">Audit Flag Counts · Payroll QA Pipeline</div>
+            <div class="dbr"><span class="dbl">Excessive OT</span><div class="dbt"><div class="dbf" style="width:100%;background:linear-gradient(90deg,#3a0a12,#e05252)"></div></div><span class="dbv" style="color:#e05252">12</span></div>
+            <div class="dbr"><span class="dbl">Duplicates</span><div class="dbt"><div class="dbf" style="width:67%;background:linear-gradient(90deg,#352207,#c9993a)"></div></div><span class="dbv" style="color:#e8bb5a">8</span></div>
+            <div class="dbr"><span class="dbl">Retro Adj.</span><div class="dbt"><div class="dbf" style="width:67%;background:linear-gradient(90deg,#4a3008,#e8bb5a)"></div></div><span class="dbv" style="color:#e8bb5a">8</span></div>
+            <div class="dbr"><span class="dbl">Code Mismatch</span><div class="dbt"><div class="dbf" style="width:50%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">6</span></div>
+            <div class="dbr"><span class="dbl">Missing Ded.</span><div class="dbt"><div class="dbf" style="width:17%;background:linear-gradient(90deg,#0a3060,#4f5fff)"></div></div><span class="dbv" style="color:#8b93ff">2</span></div>
+          </div>
+
+          <div class="dmtags">
+            <span class="dtag dtin">Python</span><span class="dtag dtin">Pandas</span>
+            <span class="dtag dtaq">Oracle HCM</span><span class="dtag dtaq">Payroll Controls</span>
+            <span class="dtag dtgd">Automation</span><span class="dtag dtgd">Audit Pipeline</span>
+            <span class="dtag dtrs">Exception Detection</span>
+          </div>
+
+          <div class="dmsec">Resources &amp; Links</div>
+          <div class="dmacts">
+            <div class="dmrow"><a href="https://github.com/lesleyshiri" target="_blank" class="dmac dmacgh">GitHub →</a></div>
+            <div class="dmrow"><a href="mailto:lesleylonelyshiri88@gmail.com" class="dmac dmacrs" style="flex:unset;width:100%">Email About This Project</a></div>
+          </div>
         </div>
       </div>
-      <div class="pbod"><div class="peyb">Tableau · Power BI · SQL</div><div class="ptit">Revenue Analytics Dashboard</div><p class="pdesc">Real-time KPI dashboards tracking $50M+ in revenue. Automated weekly-to-24h reporting. 94% accurate 6-month forecasting. $2M+ leakage identified.</p><div class="tgs"><span class="tg tg2">Tableau</span><span class="tg ti">Power BI</span><span class="tg tq">SQL</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-g" style="font-size:8.5px">GitHub →</a></div>
     </div>
 
-    <div class="pcard pc-i rv d3">
-      <div class="pvis pv-dw" style="flex-direction:column;justify-content:center;padding:14px">
-        <div style="font-family:'DM Mono',monospace;font-size:7.5px;color:rgba(79,95,255,.45);text-transform:uppercase;letter-spacing:2px;margin-bottom:9px;text-align:center">Star Schema · Data Warehouse</div>
-        <div style="display:flex;flex-direction:column;gap:5px">
-          <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(238,234,224,.28);width:62px;text-align:right">Fact Table</span><div style="flex:1;height:8px;background:rgba(255,255,255,.04)"><div style="height:100%;width:100%;background:var(--indigo)"></div></div></div>
-          <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(238,234,224,.28);width:62px;text-align:right">Dim: Time</span><div style="flex:1;height:8px;background:rgba(255,255,255,.04)"><div style="height:100%;width:72%;background:var(--aqua)"></div></div></div>
-          <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(238,234,224,.28);width:62px;text-align:right">Dim: Customer</span><div style="flex:1;height:8px;background:rgba(255,255,255,.04)"><div style="height:100%;width:56%;background:var(--gold)"></div></div></div>
-          <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(238,234,224,.28);width:62px;text-align:right">Dim: Product</span><div style="flex:1;height:8px;background:rgba(255,255,255,.04)"><div style="height:100%;width:46%;background:var(--rose)"></div></div></div>
+    <div class="dpw rv d2" style="grid-column:1/-1;margin-bottom:0">
+      <div class="dpg">
+        <div class="dpvis">
+          <div class="dcw">
+            <div class="dct">Revenue KPI Dashboard — Performance Metrics ($50M+ tracked)</div>
+            <div class="dbr"><span class="dbl">QoQ Growth</span><div class="dbt"><div class="dbf" style="width:84%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">14%</span></div>
+            <div class="dbr"><span class="dbl">Collection</span><div class="dbt"><div class="dbf" style="width:97%;background:linear-gradient(90deg,#352207,#c9993a)"></div></div><span class="dbv" style="color:#e8bb5a">97%</span></div>
+            <div class="dbr"><span class="dbl">ROI Mult.</span><div class="dbt"><div class="dbf" style="width:84%;background:linear-gradient(90deg,#0a3060,#4f5fff)"></div></div><span class="dbv" style="color:#8b93ff">4.2x</span></div>
+            <div class="dbr"><span class="dbl">Forecast</span><div class="dbt"><div class="dbf" style="width:94%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">94%</span></div>
+            <div class="dbr"><span class="dbl">Leakage</span><div class="dbt"><div class="dbf" style="width:70%;background:linear-gradient(90deg,#3a0a12,#e05252)"></div></div><span class="dbv" style="color:#e05252">$2M+</span></div>
+            <div class="dcf">SQL + Tableau + Power BI · Weekly reporting automated to 24-hour turnaround</div>
+          </div>
+        </div>
+
+        <div class="dpi">
+          <button class="dcsbtn" id="openRevenueModal">Case Study</button>
+          <div class="dbdg">BI · Revenue Intelligence · Featured</div>
+          <div class="dptit">Revenue Analytics<br/><span>Dashboard</span></div>
+
+          <div class="dps-row">
+            <div class="dps-block dps-prob">
+              <div class="dps-lbl">The Problem</div>
+              <div class="dps-txt">Leadership needed faster visibility into revenue trends, leakage, and forecast confidence across high-value accounts.</div>
+            </div>
+            <div class="dps-block dps-out">
+              <div class="dps-lbl">The Outcome</div>
+              <div class="dps-txt">Built live KPI dashboards tracking $50M+ in revenue, with 94% forecast accuracy and $2M+ leakage surfaced.</div>
+            </div>
+          </div>
+
+          <div class="dtags">
+            <span class="dtag dtgd">Tableau</span>
+            <span class="dtag dtin">Power BI</span>
+            <span class="dtag dtaq">SQL</span>
+            <span class="dtag dtaq">Forecasting</span>
+            <span class="dtag dtgd">KPI Reporting</span>
+            <span class="dtag dtrs">Leakage Analysis</span>
+          </div>
+          <div class="dpbtns">
+            <a href="https://github.com/lesleyshiri" target="_blank" class="dpbtn dpbin">GitHub →</a>
+          </div>
         </div>
       </div>
-      <div class="pbod"><div class="peyb">SQL · Data Engineering · ETL</div><div class="ptit">Enterprise Data Warehouse</div><p class="pdesc">Full star-schema data warehouse — fact tables, dimension tables, grain, and surrogate keys. Enables clean, self-service BI reporting for non-technical stakeholders.</p><div class="tgs"><span class="tg ti">SQL</span><span class="tg tq">Star Schema</span><span class="tg tg2">ETL</span><span class="tg ti">BigQuery</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-i" style="font-size:8.5px">GitHub →</a></div>
     </div>
 
-    <div class="pcard pc-r rv d1">
-      <div class="pvis pv-fraud">
-        <div class="paybars">
-          <div class="pb-t">Expense Fraud Flags · 1,240 Claims</div>
-          <div class="pb-r"><span class="pb-l">Duplicate Claim</span><div class="pb-tr"><div class="pb-f" style="width:100%;background:var(--rose)"></div></div><span class="pb-n">18</span></div>
-          <div class="pb-r"><span class="pb-l">Round Amounts</span><div class="pb-tr"><div class="pb-f" style="width:72%;background:var(--gold)"></div></div><span class="pb-n">13</span></div>
-          <div class="pb-r"><span class="pb-l">Split Invoices</span><div class="pb-tr"><div class="pb-f" style="width:56%;background:var(--gold2)"></div></div><span class="pb-n">10</span></div>
-          <div class="pb-r"><span class="pb-l">Vendor Mismatch</span><div class="pb-tr"><div class="pb-f" style="width:39%;background:var(--indigo2)"></div></div><span class="pb-n">7</span></div>
-          <div class="pb-r"><span class="pb-l">Holiday Timing</span><div class="pb-tr"><div class="pb-f" style="width:22%;background:var(--aqua)"></div></div><span class="pb-n">4</span></div>
+    <div class="dmbg" id="revenueModal">
+      <div class="dmc">
+        <button class="dmclose" id="closeRevenueModal">✕ Close</button>
+        <div class="dmhead">
+          <div class="dmicon">📈</div>
+          <div class="dmey">Project Preview</div>
+        </div>
+        <div class="dmbody">
+          <div class="dmcsbdg">Case Study</div>
+          <div class="dmtit">Revenue Intelligence &amp;<br/><span>Executive Dashboarding</span></div>
+          <div class="dkrow">
+            <div class="dkpi dkaq"><div class="dkv">$50M+</div><div class="dkl">Revenue</div></div>
+            <div class="dkpi dkin"><div class="dkv">94%</div><div class="dkl">Forecast</div></div>
+            <div class="dkpi dkgd"><div class="dkv">$2M+</div><div class="dkl">Leakage</div></div>
+          </div>
+
+          <div class="dmps">
+            <div class="dmpb dmprob">
+              <div class="dmpbl">The Problem</div>
+              <div class="dmptxt">Revenue reporting was too slow and fragmented to support fast commercial decisions, especially around leakage and collection performance.</div>
+            </div>
+            <div class="dmpb dmout">
+              <div class="dmpbl">The Outcome</div>
+              <div class="dmptxt">Interactive dashboards condensed operational and financial signals into one decision layer for executives and revenue teams.</div>
+            </div>
+          </div>
+
+          <div class="dmsec">My Approach</div>
+          <div class="dmtxt">Modeled KPI pipelines in SQL, surfaced visual reporting in Tableau and Power BI, and tracked trend movement, collection efficiency, ROI, and forecast quality in near real time.</div>
+
+          <div class="dmbars">
+            <div class="dmbt">Revenue KPI Snapshot</div>
+            <div class="dbr"><span class="dbl">QoQ Growth</span><div class="dbt"><div class="dbf" style="width:84%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">14%</span></div>
+            <div class="dbr"><span class="dbl">Collection</span><div class="dbt"><div class="dbf" style="width:97%;background:linear-gradient(90deg,#352207,#c9993a)"></div></div><span class="dbv" style="color:#e8bb5a">97%</span></div>
+            <div class="dbr"><span class="dbl">ROI Mult.</span><div class="dbt"><div class="dbf" style="width:84%;background:linear-gradient(90deg,#0a3060,#4f5fff)"></div></div><span class="dbv" style="color:#8b93ff">4.2x</span></div>
+            <div class="dbr"><span class="dbl">Forecast</span><div class="dbt"><div class="dbf" style="width:94%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">94%</span></div>
+            <div class="dbr"><span class="dbl">Leakage</span><div class="dbt"><div class="dbf" style="width:70%;background:linear-gradient(90deg,#3a0a12,#e05252)"></div></div><span class="dbv" style="color:#e05252">$2M+</span></div>
+          </div>
+
+          <div class="dmtags">
+            <span class="dtag dtgd">Tableau</span><span class="dtag dtin">Power BI</span>
+            <span class="dtag dtaq">SQL</span><span class="dtag dtaq">Forecasting</span>
+            <span class="dtag dtgd">Executive Reporting</span><span class="dtag dtrs">Revenue Leakage</span>
+          </div>
         </div>
       </div>
-      <div class="pbod"><div class="peyb">Python · Scikit-Learn · Anomaly Detection</div><div class="ptit">Expense Fraud Detection</div><p class="pdesc">ML pipeline flagging 5 fraud patterns across 1,240 expense claims. Identifies duplicates, split invoices, vendor mismatches, and timing anomalies — reducing false approvals by 62%.</p><div class="tgs"><span class="tg tr">Python</span><span class="tg tr">Isolation Forest</span><span class="tg tq">Pandas</span><span class="tg tg2">Rules Engine</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-i" style="font-size:8.5px">GitHub →</a></div>
     </div>
 
-    <div class="pcard pc-q rv d2">
-      <div class="pvis pv-cashflow">
-        <div class="revmini">
-          <div style="font-family:'DM Mono',monospace;font-size:7.5px;color:rgba(0,191,165,.4);text-transform:uppercase;letter-spacing:2px;margin-bottom:7px">Cash Flow Forecast · 12-Month Horizon</div>
-          <div class="rm-r"><span class="rm-l">Best Case</span><span class="rm-v" style="color:var(--aqua)">+$4.2M</span></div>
-          <div class="rm-r"><span class="rm-l">Base Case</span><span class="rm-v" style="color:var(--indigo2)">+$2.8M</span></div>
-          <div class="rm-r"><span class="rm-l">Worst Case</span><span class="rm-v" style="color:var(--rose)">+$0.9M</span></div>
-          <div class="rm-r"><span class="rm-l">Forecast Acc.</span><span class="rm-v" style="color:var(--gold2)">91%</span></div>
-          <div class="rm-r"><span class="rm-l">Burn Cover</span><span class="rm-v" style="color:var(--aqua)">7.4 mo</span></div>
+    <div class="dpw rv d3" style="grid-column:1/-1;margin-bottom:0">
+      <div class="dpg">
+        <div class="dpvis">
+          <div class="dcw">
+            <div class="dct">Enterprise Data Warehouse — Star Schema Coverage</div>
+            <div class="dbr"><span class="dbl">Fact Table</span><div class="dbt"><div class="dbf" style="width:100%;background:linear-gradient(90deg,#0a3060,#4f5fff)"></div></div><span class="dbv" style="color:#8b93ff">100%</span></div>
+            <div class="dbr"><span class="dbl">Dim: Time</span><div class="dbt"><div class="dbf" style="width:72%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">72%</span></div>
+            <div class="dbr"><span class="dbl">Dim: Cust.</span><div class="dbt"><div class="dbf" style="width:56%;background:linear-gradient(90deg,#352207,#c9993a)"></div></div><span class="dbv" style="color:#e8bb5a">56%</span></div>
+            <div class="dbr"><span class="dbl">Dim: Prod.</span><div class="dbt"><div class="dbf" style="width:46%;background:linear-gradient(90deg,#3a0a12,#e05252)"></div></div><span class="dbv" style="color:#e05252">46%</span></div>
+            <div class="dcf">SQL · ETL · BigQuery · Self-service reporting foundation</div>
+          </div>
+        </div>
+        <div class="dpi">
+          <button class="dcsbtn" id="openWarehouseModal">Case Study</button>
+          <div class="dbdg">SQL · Data Engineering · Featured</div>
+          <div class="dptit">Enterprise Data<br/><span>Warehouse</span></div>
+          <div class="dps-row">
+            <div class="dps-block dps-prob"><div class="dps-lbl">The Problem</div><div class="dps-txt">Reporting depended on scattered source data and repeated manual joins, making consistent BI difficult for non-technical stakeholders.</div></div>
+            <div class="dps-block dps-out"><div class="dps-lbl">The Outcome</div><div class="dps-txt">Designed a full star-schema warehouse that simplified analytics and enabled reliable self-service reporting.</div></div>
+          </div>
+          <div class="dtags"><span class="dtag dtin">SQL</span><span class="dtag dtaq">Star Schema</span><span class="dtag dtgd">ETL</span><span class="dtag dtin">BigQuery</span></div>
+          <div class="dpbtns"><a href="https://github.com/lesleyshiri" target="_blank" class="dpbtn dpbin">GitHub →</a></div>
         </div>
       </div>
-      <div class="pbod"><div class="peyb">Python · Excel · Financial Modelling</div><div class="ptit">Cash Flow Forecasting Model</div><p class="pdesc">3, 6, and 12-month cash flow forecast with best/base/worst scenario planning. Integrates AR, AP, and payroll cycles. 91% accuracy across 18-month back-test window.</p><div class="tgs"><span class="tg tq">Python</span><span class="tg tq">Pandas</span><span class="tg tg2">Excel</span><span class="tg ti">Scenario Modelling</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-q" style="font-size:8.5px">GitHub →</a></div>
     </div>
 
-    <div class="pcard pc-i rv d3">
-      <div class="pvis pv-credit" style="flex-direction:column;justify-content:center;padding:14px">
-        <div style="font-family:'DM Mono',monospace;font-size:7.5px;color:rgba(79,95,255,.45);text-transform:uppercase;letter-spacing:2px;margin-bottom:9px;text-align:center">Credit Risk Segments · 3,500 Accounts</div>
-        <div style="display:flex;flex-direction:column;gap:5px">
-          <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(238,234,224,.28);width:62px;text-align:right">Low Risk</span><div style="flex:1;height:8px;background:rgba(255,255,255,.04)"><div style="height:100%;width:88%;background:var(--aqua)"></div></div><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(0,191,165,.55);width:28px">62%</span></div>
-          <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(238,234,224,.28);width:62px;text-align:right">Medium</span><div style="flex:1;height:8px;background:rgba(255,255,255,.04)"><div style="height:100%;width:48%;background:var(--gold2)"></div></div><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(201,153,58,.55);width:28px">24%</span></div>
-          <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(238,234,224,.28);width:62px;text-align:right">High Risk</span><div style="flex:1;height:8px;background:rgba(255,255,255,.04)"><div style="height:100%;width:20%;background:var(--rose)"></div></div><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(224,82,82,.55);width:28px">11%</span></div>
-          <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(238,234,224,.28);width:62px;text-align:right">Default</span><div style="flex:1;height:8px;background:rgba(255,255,255,.04)"><div style="height:100%;width:6%;background:#ff2244"></div></div><span style="font-family:'DM Mono',monospace;font-size:7px;color:rgba(255,34,68,.55);width:28px">3%</span></div>
+    <div class="dmbg" id="warehouseModal">
+      <div class="dmc">
+        <button class="dmclose" id="closeWarehouseModal">✕ Close</button>
+        <div class="dmhead"><div class="dmicon">🗄️</div><div class="dmey">Project Preview</div></div>
+        <div class="dmbody">
+          <div class="dmcsbdg">Case Study</div>
+          <div class="dmtit">Enterprise Warehouse &amp;<br/><span>BI Foundation</span></div>
+          <div class="dkrow"><div class="dkpi dkaq"><div class="dkv">1</div><div class="dkl">Fact Table</div></div><div class="dkpi dkin"><div class="dkv">3</div><div class="dkl">Dimensions</div></div><div class="dkpi dkgd"><div class="dkv">ETL</div><div class="dkl">Pipeline</div></div></div>
+          <div class="dmps"><div class="dmpb dmprob"><div class="dmpbl">The Problem</div><div class="dmptxt">Operational data was not structured for analytics consumption and required repetitive preparation before reporting.</div></div><div class="dmpb dmout"><div class="dmpbl">The Outcome</div><div class="dmptxt">A warehouse layer standardized grain, keys, and dimensions for scalable reporting and downstream dashboards.</div></div></div>
+          <div class="dmsec">My Approach</div><div class="dmtxt">Modeled fact and dimension tables with surrogate keys, clear grain definitions, and ETL logic that supported clean BI outputs for business users.</div>
         </div>
       </div>
-      <div class="pbod"><div class="peyb">Python · Scikit-Learn · Power BI</div><div class="ptit">Credit Risk Scoring Dashboard</div><p class="pdesc">Logistic regression + gradient boosting model scoring 3,500 accounts across 4 risk tiers. Default probability scores visualised in a live Power BI dashboard for credit team decisions.</p><div class="tgs"><span class="tg ti">Python</span><span class="tg ti">Grad. Boost</span><span class="tg tq">Power BI</span><span class="tg tg2">SQL</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-i" style="font-size:8.5px">GitHub →</a></div>
     </div>
 
-    <div class="pcard pc-g rv d1">
-      <div class="pvis pv-budget">
-        <div class="paybars">
-          <div class="pb-t">Budget vs Actual · Q1 Variance</div>
-          <div class="pb-r"><span class="pb-l">Revenue</span><div class="pb-tr"><div class="pb-f" style="width:91%;background:var(--aqua)"></div></div><span class="pb-n" style="color:var(--aqua)">+3%</span></div>
-          <div class="pb-r"><span class="pb-l">Payroll</span><div class="pb-tr"><div class="pb-f" style="width:108%;background:var(--rose)"></div></div><span class="pb-n" style="color:var(--rose)">-8%</span></div>
-          <div class="pb-r"><span class="pb-l">OpEx</span><div class="pb-tr"><div class="pb-f" style="width:97%;background:var(--gold2)"></div></div><span class="pb-n" style="color:var(--gold2)">-3%</span></div>
-          <div class="pb-r"><span class="pb-l">Marketing</span><div class="pb-tr"><div class="pb-f" style="width:84%;background:var(--indigo2)"></div></div><span class="pb-n" style="color:var(--indigo2)">+16%</span></div>
-          <div class="pb-r"><span class="pb-l">Net Margin</span><div class="pb-tr"><div class="pb-f" style="width:95%;background:var(--gold)"></div></div><span class="pb-n" style="color:var(--gold)">-5%</span></div>
-        </div>
+    <div class="dpw rv d1" style="grid-column:1/-1;margin-bottom:0">
+      <div class="dpg">
+        <div class="dpvis"><div class="dcw"><div class="dct">Expense Fraud Flags — 1,240 Claims Screened</div><div class="dbr"><span class="dbl">Duplicate</span><div class="dbt"><div class="dbf" style="width:100%;background:linear-gradient(90deg,#3a0a12,#e05252)"></div></div><span class="dbv" style="color:#e05252">18</span></div><div class="dbr"><span class="dbl">Round Amts</span><div class="dbt"><div class="dbf" style="width:72%;background:linear-gradient(90deg,#352207,#c9993a)"></div></div><span class="dbv" style="color:#e8bb5a">13</span></div><div class="dbr"><span class="dbl">Split Inv.</span><div class="dbt"><div class="dbf" style="width:56%;background:linear-gradient(90deg,#4a3008,#e8bb5a)"></div></div><span class="dbv" style="color:#e8bb5a">10</span></div><div class="dbr"><span class="dbl">Vendor Mis.</span><div class="dbt"><div class="dbf" style="width:39%;background:linear-gradient(90deg,#0a3060,#4f5fff)"></div></div><span class="dbv" style="color:#8b93ff">7</span></div><div class="dbr"><span class="dbl">Holiday</span><div class="dbt"><div class="dbf" style="width:22%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">4</span></div><div class="dcf">Python anomaly detection · 5 fraud patterns · 62% fewer false approvals</div></div></div>
+        <div class="dpi"><button class="dcsbtn" id="openFraudModal">Case Study</button><div class="dbdg">Controls Analytics · Fraud Detection · Featured</div><div class="dptit">Expense Fraud<br/><span>Detection</span></div><div class="dps-row"><div class="dps-block dps-prob"><div class="dps-lbl">The Problem</div><div class="dps-txt">Expense review needed a faster way to highlight suspicious claims before approval and reimbursement.</div></div><div class="dps-block dps-out"><div class="dps-lbl">The Outcome</div><div class="dps-txt">Flagged high-risk claims across five fraud patterns and improved exception review quality with fewer false approvals.</div></div></div><div class="dtags"><span class="dtag dtrs">Python</span><span class="dtag dtrs">Isolation Forest</span><span class="dtag dtaq">Pandas</span><span class="dtag dtgd">Rules Engine</span></div><div class="dpbtns"><a href="https://github.com/lesleyshiri" target="_blank" class="dpbtn dpbin">GitHub →</a></div></div>
       </div>
-      <div class="pbod"><div class="peyb">Python · Excel · Power BI · Automation</div><div class="ptit">Budget Variance Intelligence</div><p class="pdesc">Automated monthly variance analysis app that generates plain-language narratives explaining what changed, why, and the projected impact — cutting manual commentary time by 70%.</p><div class="tgs"><span class="tg tg2">Python</span><span class="tg tg2">Excel</span><span class="tg ti">Power BI</span><span class="tg tq">NLP Narratives</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-g" style="font-size:8.5px">GitHub →</a></div>
     </div>
 
-    <div class="pcard pc-q rv d2">
-      <div class="pvis pv-workforce">
-        <div class="paybars">
-          <div class="pb-t">Workforce Cost Analysis · 380 Employees</div>
-          <div class="pb-r"><span class="pb-l">Overtime Cost</span><div class="pb-tr"><div class="pb-f" style="width:100%;background:var(--rose)"></div></div><span class="pb-n" style="color:var(--rose)">↑22%</span></div>
-          <div class="pb-r"><span class="pb-l">Absenteeism</span><div class="pb-tr"><div class="pb-f" style="width:74%;background:var(--gold)"></div></div><span class="pb-n" style="color:var(--gold)">7.4%</span></div>
-          <div class="pb-r"><span class="pb-l">Productivity</span><div class="pb-tr"><div class="pb-f" style="width:82%;background:var(--aqua)"></div></div><span class="pb-n" style="color:var(--aqua)">82%</span></div>
-          <div class="pb-r"><span class="pb-l">Cost / Output</span><div class="pb-tr"><div class="pb-f" style="width:64%;background:var(--indigo2)"></div></div><span class="pb-n" style="color:var(--indigo2)">↓12%</span></div>
-          <div class="pb-r"><span class="pb-l">Savings Found</span><div class="pb-tr"><div class="pb-f" style="width:55%;background:var(--gold2)"></div></div><span class="pb-n" style="color:var(--gold2)">$85K</span></div>
-        </div>
+    <div class="dmbg" id="fraudModal"><div class="dmc"><button class="dmclose" id="closeFraudModal">✕ Close</button><div class="dmhead"><div class="dmicon">🧠</div><div class="dmey">Project Preview</div></div><div class="dmbody"><div class="dmcsbdg">Case Study</div><div class="dmtit">Expense Controls &amp;<br/><span>Fraud Screening</span></div><div class="dkrow"><div class="dkpi dkaq"><div class="dkv">1,240</div><div class="dkl">Claims</div></div><div class="dkpi dkin"><div class="dkv">5</div><div class="dkl">Patterns</div></div><div class="dkpi dkgd"><div class="dkv">62%</div><div class="dkl">Reduction</div></div></div><div class="dmps"><div class="dmpb dmprob"><div class="dmpbl">The Problem</div><div class="dmptxt">Manual expense checks struggled to consistently identify suspicious duplicates, splits, and mismatches.</div></div><div class="dmpb dmout"><div class="dmpbl">The Outcome</div><div class="dmptxt">Automated anomaly checks elevated risky claims for review and strengthened fraud-prevention controls.</div></div></div></div></div></div>
+
+    <div class="dpw rv d2" style="grid-column:1/-1;margin-bottom:0">
+      <div class="dpg">
+        <div class="dpvis"><div class="dcw"><div class="dct">Cash Flow Forecast — 12 Month Horizon</div><div class="dbr"><span class="dbl">Best Case</span><div class="dbt"><div class="dbf" style="width:88%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">$4.2M</span></div><div class="dbr"><span class="dbl">Base Case</span><div class="dbt"><div class="dbf" style="width:74%;background:linear-gradient(90deg,#0a3060,#4f5fff)"></div></div><span class="dbv" style="color:#8b93ff">$2.8M</span></div><div class="dbr"><span class="dbl">Worst Case</span><div class="dbt"><div class="dbf" style="width:34%;background:linear-gradient(90deg,#3a0a12,#e05252)"></div></div><span class="dbv" style="color:#e05252">$0.9M</span></div><div class="dbr"><span class="dbl">Accuracy</span><div class="dbt"><div class="dbf" style="width:91%;background:linear-gradient(90deg,#352207,#c9993a)"></div></div><span class="dbv" style="color:#e8bb5a">91%</span></div><div class="dbr"><span class="dbl">Burn Cover</span><div class="dbt"><div class="dbf" style="width:62%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">7.4m</span></div><div class="dcf">Scenario planning across AR, AP, and payroll cycles</div></div></div>
+        <div class="dpi"><button class="dcsbtn" id="openCashflowModal">Case Study</button><div class="dbdg">Financial Modeling · Forecasting · Featured</div><div class="dptit">Cash Flow<br/><span>Forecasting</span></div><div class="dps-row"><div class="dps-block dps-prob"><div class="dps-lbl">The Problem</div><div class="dps-txt">Cash planning needed a forward-looking model that could support multiple scenarios instead of static spreadsheet snapshots.</div></div><div class="dps-block dps-out"><div class="dps-lbl">The Outcome</div><div class="dps-txt">Built best, base, and worst-case forecasts with 91% accuracy across an 18-month back-test.</div></div></div><div class="dtags"><span class="dtag dtaq">Python</span><span class="dtag dtaq">Pandas</span><span class="dtag dtgd">Excel</span><span class="dtag dtin">Scenario Modeling</span></div><div class="dpbtns"><a href="https://github.com/lesleyshiri" target="_blank" class="dpbtn dpbin">GitHub →</a></div></div>
       </div>
-      <div class="pbod"><div class="peyb">Python · Power BI · Oracle HCM</div><div class="ptit">Workforce Cost Optimization</div><p class="pdesc">Analyzed payroll, overtime, absenteeism, and productivity data across 380 employees. Identified $85K in addressable cost and produced staffing recommendations adopted by HR leadership.</p><div class="tgs"><span class="tg tq">Python</span><span class="tg ti">Power BI</span><span class="tg tg2">Oracle HCM</span><span class="tg tq">HR Analytics</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-q" style="font-size:8.5px">GitHub →</a></div>
     </div>
 
-    <div class="pcard pc-r rv d3">
-      <div class="pvis pv-leakage">
-        <div class="revmini">
-          <div style="font-family:'DM Mono',monospace;font-size:7.5px;color:rgba(224,82,82,.4);text-transform:uppercase;letter-spacing:2px;margin-bottom:7px">Revenue Leakage · Root-Cause Drill-Down</div>
-          <div class="rm-r"><span class="rm-l">Billing Errors</span><span class="rm-v" style="color:var(--rose)">$620K</span></div>
-          <div class="rm-r"><span class="rm-l">Unapproved Disc.</span><span class="rm-v" style="color:var(--gold)">$480K</span></div>
-          <div class="rm-r"><span class="rm-l">Write-offs</span><span class="rm-v" style="color:var(--gold2)">$390K</span></div>
-          <div class="rm-r"><span class="rm-l">Collection Gaps</span><span class="rm-v" style="color:var(--indigo2)">$310K</span></div>
-          <div class="rm-r"><span class="rm-l">Total Recovered</span><span class="rm-v" style="color:var(--aqua)">$1.8M</span></div>
+    <div class="dmbg" id="cashflowModal"><div class="dmc"><button class="dmclose" id="closeCashflowModal">✕ Close</button><div class="dmhead"><div class="dmicon">💵</div><div class="dmey">Project Preview</div></div><div class="dmbody"><div class="dmcsbdg">Case Study</div><div class="dmtit">Cash Flow Planning &amp;<br/><span>Scenario Forecasting</span></div><div class="dkrow"><div class="dkpi dkaq"><div class="dkv">12</div><div class="dkl">Months</div></div><div class="dkpi dkin"><div class="dkv">91%</div><div class="dkl">Accuracy</div></div><div class="dkpi dkgd"><div class="dkv">3</div><div class="dkl">Scenarios</div></div></div><div class="dmps"><div class="dmpb dmprob"><div class="dmpbl">The Problem</div><div class="dmptxt">Leadership needed scenario-based cash visibility for near-term and medium-term planning.</div></div><div class="dmpb dmout"><div class="dmpbl">The Outcome</div><div class="dmptxt">The model linked operating cycles to liquidity projections and improved planning confidence.</div></div></div></div></div></div>
+
+    <div class="dpw rv d3" style="grid-column:1/-1;margin-bottom:0">
+      <div class="dpg">
+        <div class="dpvis">
+          <div class="dcw">
+            <div class="dct">Credit Risk Segments — 3,500 Accounts Scored</div>
+            <div class="dbr"><span class="dbl">Low Risk</span><div class="dbt"><div class="dbf" style="width:88%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">62%</span></div>
+            <div class="dbr"><span class="dbl">Medium</span><div class="dbt"><div class="dbf" style="width:48%;background:linear-gradient(90deg,#4a3008,#e8bb5a)"></div></div><span class="dbv" style="color:#e8bb5a">24%</span></div>
+            <div class="dbr"><span class="dbl">High Risk</span><div class="dbt"><div class="dbf" style="width:20%;background:linear-gradient(90deg,#3a0a12,#e05252)"></div></div><span class="dbv" style="color:#e05252">11%</span></div>
+            <div class="dbr"><span class="dbl">Default</span><div class="dbt"><div class="dbf" style="width:6%;background:linear-gradient(90deg,#520b18,#ff2244)"></div></div><span class="dbv" style="color:#ff667a">3%</span></div>
+            <div class="dcf">Logistic regression + gradient boosting · Default probability visualized in Power BI</div>
+          </div>
+        </div>
+
+        <div class="dpi">
+          <button class="dcsbtn" id="openCreditModal">Case Study</button>
+          <div class="dbdg">Risk Modeling · Power BI · Featured</div>
+          <div class="dptit">Credit Risk Scoring<br/><span>Dashboard</span></div>
+
+          <div class="dps-row">
+            <div class="dps-block dps-prob">
+              <div class="dps-lbl">The Problem</div>
+              <div class="dps-txt">Credit teams lacked a clear ranking of customer default probability and needed a faster way to segment accounts by risk.</div>
+            </div>
+            <div class="dps-block dps-out">
+              <div class="dps-lbl">The Outcome</div>
+              <div class="dps-txt">Scored 3,500 accounts across four tiers and exposed default likelihoods in a live dashboard for decision support.</div>
+            </div>
+          </div>
+
+          <div class="dtags">
+            <span class="dtag dtin">Python</span>
+            <span class="dtag dtin">Gradient Boosting</span>
+            <span class="dtag dtaq">Power BI</span>
+            <span class="dtag dtaq">Risk Segmentation</span>
+            <span class="dtag dtgd">SQL</span>
+            <span class="dtag dtrs">Default Prediction</span>
+          </div>
+          <div class="dpbtns">
+            <a href="https://github.com/lesleyshiri" target="_blank" class="dpbtn dpbin">GitHub →</a>
+          </div>
         </div>
       </div>
-      <div class="pbod"><div class="peyb">SQL · Tableau · Python</div><div class="ptit">Revenue Leakage Analyzer</div><p class="pdesc">Root-cause drill-down across 4 leakage categories — billing errors, unapproved discounts, write-offs, and collection gaps. Identified and recovered $1.8M using SQL pipelines and Tableau dashboards.</p><div class="tgs"><span class="tg tr">SQL</span><span class="tg tg2">Tableau</span><span class="tg tq">Python</span><span class="tg tr">Revenue Ops</span></div><a href="https://github.com/lesleyshiri" target="_blank" class="pcta pcta-i" style="font-size:8.5px">GitHub →</a></div>
     </div>
+
+    <div class="dmbg" id="creditModal">
+      <div class="dmc">
+        <button class="dmclose" id="closeCreditModal">✕ Close</button>
+        <div class="dmhead">
+          <div class="dmicon">🏦</div>
+          <div class="dmey">Project Preview</div>
+        </div>
+        <div class="dmbody">
+          <div class="dmcsbdg">Case Study</div>
+          <div class="dmtit">Credit Risk Modeling &amp;<br/><span>Portfolio Segmentation</span></div>
+          <div class="dkrow">
+            <div class="dkpi dkaq"><div class="dkv">3,500</div><div class="dkl">Accounts</div></div>
+            <div class="dkpi dkin"><div class="dkv">4</div><div class="dkl">Tiers</div></div>
+            <div class="dkpi dkgd"><div class="dkv">3%</div><div class="dkl">Default</div></div>
+          </div>
+
+          <div class="dmps">
+            <div class="dmpb dmprob">
+              <div class="dmpbl">The Problem</div>
+              <div class="dmptxt">Account-level credit monitoring needed better prioritization than manual review and static rules could provide.</div>
+            </div>
+            <div class="dmpb dmout">
+              <div class="dmpbl">The Outcome</div>
+              <div class="dmptxt">A modeling layer combined statistical scoring with executive-friendly risk visuals, improving visibility on low, medium, high, and default segments.</div>
+            </div>
+          </div>
+
+          <div class="dmsec">My Approach</div>
+          <div class="dmtxt">Combined logistic regression and gradient boosting outputs, segmented the portfolio into action-ready bands, and surfaced account risk positions inside a Power BI dashboard for operational use.</div>
+
+          <div class="dmbars">
+            <div class="dmbt">Risk Segment Distribution</div>
+            <div class="dbr"><span class="dbl">Low Risk</span><div class="dbt"><div class="dbf" style="width:88%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">62%</span></div>
+            <div class="dbr"><span class="dbl">Medium</span><div class="dbt"><div class="dbf" style="width:48%;background:linear-gradient(90deg,#4a3008,#e8bb5a)"></div></div><span class="dbv" style="color:#e8bb5a">24%</span></div>
+            <div class="dbr"><span class="dbl">High Risk</span><div class="dbt"><div class="dbf" style="width:20%;background:linear-gradient(90deg,#3a0a12,#e05252)"></div></div><span class="dbv" style="color:#e05252">11%</span></div>
+            <div class="dbr"><span class="dbl">Default</span><div class="dbt"><div class="dbf" style="width:6%;background:linear-gradient(90deg,#520b18,#ff2244)"></div></div><span class="dbv" style="color:#ff667a">3%</span></div>
+          </div>
+
+          <div class="dmtags">
+            <span class="dtag dtin">Python</span><span class="dtag dtin">Gradient Boosting</span>
+            <span class="dtag dtaq">Power BI</span><span class="dtag dtaq">Portfolio Analytics</span>
+            <span class="dtag dtgd">SQL</span><span class="dtag dtrs">Default Risk</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dpw rv d1" style="grid-column:1/-1;margin-bottom:0">
+      <div class="dpg">
+        <div class="dpvis">
+          <div class="dcw">
+            <div class="dct">Budget vs Actual — Q1 Variance Monitoring</div>
+            <div class="dbr"><span class="dbl">Revenue</span><div class="dbt"><div class="dbf" style="width:91%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">+3%</span></div>
+            <div class="dbr"><span class="dbl">Payroll</span><div class="dbt"><div class="dbf" style="width:100%;background:linear-gradient(90deg,#3a0a12,#e05252)"></div></div><span class="dbv" style="color:#e05252">-8%</span></div>
+            <div class="dbr"><span class="dbl">OpEx</span><div class="dbt"><div class="dbf" style="width:97%;background:linear-gradient(90deg,#4a3008,#e8bb5a)"></div></div><span class="dbv" style="color:#e8bb5a">-3%</span></div>
+            <div class="dbr"><span class="dbl">Marketing</span><div class="dbt"><div class="dbf" style="width:84%;background:linear-gradient(90deg,#0a3060,#4f5fff)"></div></div><span class="dbv" style="color:#8b93ff">+16%</span></div>
+            <div class="dbr"><span class="dbl">Net Margin</span><div class="dbt"><div class="dbf" style="width:95%;background:linear-gradient(90deg,#352207,#c9993a)"></div></div><span class="dbv" style="color:#e8bb5a">-5%</span></div>
+            <div class="dcf">Automated variance narratives · Python + Excel + Power BI · 70% less manual commentary</div>
+          </div>
+        </div>
+
+        <div class="dpi">
+          <button class="dcsbtn" id="openBudgetModal">Case Study</button>
+          <div class="dbdg">Finance Automation · Variance Analysis · Featured</div>
+          <div class="dptit">Budget Variance<br/><span>Intelligence</span></div>
+
+          <div class="dps-row">
+            <div class="dps-block dps-prob">
+              <div class="dps-lbl">The Problem</div>
+              <div class="dps-txt">Finance teams spent too much time writing repetitive commentary to explain monthly budget-to-actual movements.</div>
+            </div>
+            <div class="dps-block dps-out">
+              <div class="dps-lbl">The Outcome</div>
+              <div class="dps-txt">Automated variance analysis generated plain-language explanations of movement drivers and cut manual commentary time by 70%.</div>
+            </div>
+          </div>
+
+          <div class="dtags">
+            <span class="dtag dtgd">Python</span>
+            <span class="dtag dtgd">Excel</span>
+            <span class="dtag dtin">Power BI</span>
+            <span class="dtag dtaq">Variance Analysis</span>
+            <span class="dtag dtaq">Automation</span>
+            <span class="dtag dtrs">Narrative Reporting</span>
+          </div>
+          <div class="dpbtns">
+            <a href="https://github.com/lesleyshiri" target="_blank" class="dpbtn dpbin">GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dmbg" id="budgetModal">
+      <div class="dmc">
+        <button class="dmclose" id="closeBudgetModal">✕ Close</button>
+        <div class="dmhead">
+          <div class="dmicon">🧾</div>
+          <div class="dmey">Project Preview</div>
+        </div>
+        <div class="dmbody">
+          <div class="dmcsbdg">Case Study</div>
+          <div class="dmtit">Budget-to-Actual &amp;<br/><span>Variance Commentary</span></div>
+          <div class="dkrow">
+            <div class="dkpi dkaq"><div class="dkv">70%</div><div class="dkl">Time Saved</div></div>
+            <div class="dkpi dkin"><div class="dkv">24h</div><div class="dkl">Turnaround</div></div>
+            <div class="dkpi dkgd"><div class="dkv">5</div><div class="dkl">Key KPIs</div></div>
+          </div>
+
+          <div class="dmps">
+            <div class="dmpb dmprob">
+              <div class="dmpbl">The Problem</div>
+              <div class="dmptxt">Budget reviews were accurate but too slow because commentary and explanation of movements had to be prepared manually every cycle.</div>
+            </div>
+            <div class="dmpb dmout">
+              <div class="dmpbl">The Outcome</div>
+              <div class="dmptxt">The workflow automated both detection and explanation of major variances, helping leadership understand impact faster.</div>
+            </div>
+          </div>
+
+          <div class="dmsec">My Approach</div>
+          <div class="dmtxt">Combined Python and Excel-based variance logic with dashboard output in Power BI, then translated metric changes into concise natural-language commentary aligned to business reporting cycles.</div>
+
+          <div class="dmbars">
+            <div class="dmbt">Q1 Variance Snapshot</div>
+            <div class="dbr"><span class="dbl">Revenue</span><div class="dbt"><div class="dbf" style="width:91%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">+3%</span></div>
+            <div class="dbr"><span class="dbl">Payroll</span><div class="dbt"><div class="dbf" style="width:100%;background:linear-gradient(90deg,#3a0a12,#e05252)"></div></div><span class="dbv" style="color:#e05252">-8%</span></div>
+            <div class="dbr"><span class="dbl">OpEx</span><div class="dbt"><div class="dbf" style="width:97%;background:linear-gradient(90deg,#4a3008,#e8bb5a)"></div></div><span class="dbv" style="color:#e8bb5a">-3%</span></div>
+            <div class="dbr"><span class="dbl">Marketing</span><div class="dbt"><div class="dbf" style="width:84%;background:linear-gradient(90deg,#0a3060,#4f5fff)"></div></div><span class="dbv" style="color:#8b93ff">+16%</span></div>
+            <div class="dbr"><span class="dbl">Net Margin</span><div class="dbt"><div class="dbf" style="width:95%;background:linear-gradient(90deg,#352207,#c9993a)"></div></div><span class="dbv" style="color:#e8bb5a">-5%</span></div>
+          </div>
+
+          <div class="dmtags">
+            <span class="dtag dtgd">Python</span><span class="dtag dtgd">Excel</span>
+            <span class="dtag dtin">Power BI</span><span class="dtag dtaq">Variance Analysis</span>
+            <span class="dtag dtaq">Narratives</span><span class="dtag dtrs">Finance Automation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dpw rv d2" style="grid-column:1/-1;margin-bottom:0">
+      <div class="dpg">
+        <div class="dpvis"><div class="dcw"><div class="dct">Workforce Cost Analysis — 380 Employees</div><div class="dbr"><span class="dbl">Overtime</span><div class="dbt"><div class="dbf" style="width:100%;background:linear-gradient(90deg,#3a0a12,#e05252)"></div></div><span class="dbv" style="color:#e05252">22%</span></div><div class="dbr"><span class="dbl">Absentee.</span><div class="dbt"><div class="dbf" style="width:74%;background:linear-gradient(90deg,#352207,#c9993a)"></div></div><span class="dbv" style="color:#e8bb5a">7.4%</span></div><div class="dbr"><span class="dbl">Productiv.</span><div class="dbt"><div class="dbf" style="width:82%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">82%</span></div><div class="dbr"><span class="dbl">Cost/Output</span><div class="dbt"><div class="dbf" style="width:64%;background:linear-gradient(90deg,#0a3060,#4f5fff)"></div></div><span class="dbv" style="color:#8b93ff">12%</span></div><div class="dbr"><span class="dbl">Savings</span><div class="dbt"><div class="dbf" style="width:55%;background:linear-gradient(90deg,#4a3008,#e8bb5a)"></div></div><span class="dbv" style="color:#e8bb5a">$85K</span></div><div class="dcf">HR analytics + payroll + productivity monitoring</div></div></div>
+        <div class="dpi"><button class="dcsbtn" id="openWorkforceModal">Case Study</button><div class="dbdg">HR Analytics · Cost Optimization · Featured</div><div class="dptit">Workforce Cost<br/><span>Optimization</span></div><div class="dps-row"><div class="dps-block dps-prob"><div class="dps-lbl">The Problem</div><div class="dps-txt">Leaders needed a clearer view of where overtime, absenteeism, and staffing inefficiencies were driving unnecessary cost.</div></div><div class="dps-block dps-out"><div class="dps-lbl">The Outcome</div><div class="dps-txt">Analysis across 380 employees surfaced $85K in addressable savings and informed staffing recommendations.</div></div></div><div class="dtags"><span class="dtag dtaq">Python</span><span class="dtag dtin">Power BI</span><span class="dtag dtgd">Oracle HCM</span><span class="dtag dtaq">HR Analytics</span></div><div class="dpbtns"><a href="https://github.com/lesleyshiri" target="_blank" class="dpbtn dpbin">GitHub →</a></div></div>
+      </div>
+    </div>
+
+    <div class="dmbg" id="workforceModal"><div class="dmc"><button class="dmclose" id="closeWorkforceModal">✕ Close</button><div class="dmhead"><div class="dmicon">👥</div><div class="dmey">Project Preview</div></div><div class="dmbody"><div class="dmcsbdg">Case Study</div><div class="dmtit">Workforce Analytics &amp;<br/><span>Staffing Efficiency</span></div><div class="dkrow"><div class="dkpi dkaq"><div class="dkv">380</div><div class="dkl">Employees</div></div><div class="dkpi dkin"><div class="dkv">$85K</div><div class="dkl">Savings</div></div><div class="dkpi dkgd"><div class="dkv">82%</div><div class="dkl">Output</div></div></div><div class="dmps"><div class="dmpb dmprob"><div class="dmpbl">The Problem</div><div class="dmptxt">Payroll and workforce signals needed to be translated into practical cost-saving actions.</div></div><div class="dmpb dmout"><div class="dmpbl">The Outcome</div><div class="dmptxt">Analysis identified efficiency opportunities across overtime, absence, and productivity trends.</div></div></div></div></div></div>
+
+    <div class="dpw rv d3" style="grid-column:1/-1;margin-bottom:0">
+      <div class="dpg">
+        <div class="dpvis"><div class="dcw"><div class="dct">Revenue Leakage — Root Cause Drill-Down</div><div class="dbr"><span class="dbl">Billing</span><div class="dbt"><div class="dbf" style="width:100%;background:linear-gradient(90deg,#3a0a12,#e05252)"></div></div><span class="dbv" style="color:#e05252">620K</span></div><div class="dbr"><span class="dbl">Discounts</span><div class="dbt"><div class="dbf" style="width:77%;background:linear-gradient(90deg,#352207,#c9993a)"></div></div><span class="dbv" style="color:#e8bb5a">480K</span></div><div class="dbr"><span class="dbl">Write-offs</span><div class="dbt"><div class="dbf" style="width:63%;background:linear-gradient(90deg,#4a3008,#e8bb5a)"></div></div><span class="dbv" style="color:#e8bb5a">390K</span></div><div class="dbr"><span class="dbl">Collections</span><div class="dbt"><div class="dbf" style="width:50%;background:linear-gradient(90deg,#0a3060,#4f5fff)"></div></div><span class="dbv" style="color:#8b93ff">310K</span></div><div class="dbr"><span class="dbl">Recovered</span><div class="dbt"><div class="dbf" style="width:90%;background:linear-gradient(90deg,#083040,#00bfa5)"></div></div><span class="dbv" style="color:#00bfa5">1.8M</span></div><div class="dcf">SQL + Tableau + Python · Four leakage categories isolated</div></div></div>
+        <div class="dpi"><button class="dcsbtn" id="openLeakageModal">Case Study</button><div class="dbdg">Revenue Ops · Root Cause Analysis · Featured</div><div class="dptit">Revenue Leakage<br/><span>Analyzer</span></div><div class="dps-row"><div class="dps-block dps-prob"><div class="dps-lbl">The Problem</div><div class="dps-txt">Revenue leakage was occurring across several categories without a single view of root causes and recovery opportunities.</div></div><div class="dps-block dps-out"><div class="dps-lbl">The Outcome</div><div class="dps-txt">Identified and helped recover $1.8M by drilling down into billing, discounts, write-offs, and collection gaps.</div></div></div><div class="dtags"><span class="dtag dtrs">SQL</span><span class="dtag dtgd">Tableau</span><span class="dtag dtaq">Python</span><span class="dtag dtrs">Revenue Ops</span></div><div class="dpbtns"><a href="https://github.com/lesleyshiri" target="_blank" class="dpbtn dpbin">GitHub →</a></div></div>
+      </div>
+    </div>
+
+    <div class="dmbg" id="leakageModal"><div class="dmc"><button class="dmclose" id="closeLeakageModal">✕ Close</button><div class="dmhead"><div class="dmicon">💸</div><div class="dmey">Project Preview</div></div><div class="dmbody"><div class="dmcsbdg">Case Study</div><div class="dmtit">Revenue Recovery &amp;<br/><span>Leakage Analysis</span></div><div class="dkrow"><div class="dkpi dkaq"><div class="dkv">$1.8M</div><div class="dkl">Recovered</div></div><div class="dkpi dkin"><div class="dkv">4</div><div class="dkl">Drivers</div></div><div class="dkpi dkgd"><div class="dkv">SQL</div><div class="dkl">Pipeline</div></div></div><div class="dmps"><div class="dmpb dmprob"><div class="dmpbl">The Problem</div><div class="dmptxt">Leakage patterns were distributed across multiple operational processes and difficult to quantify together.</div></div><div class="dmpb dmout"><div class="dmpbl">The Outcome</div><div class="dmptxt">Centralized analysis exposed the highest-value recovery opportunities and supported action across four categories.</div></div></div></div></div></div>
   </div>
 </section>
 <div class="div-line"></div>
@@ -653,73 +1249,129 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.2
       <div class="rnum">01</div><div class="rbadge">Payroll Specialist</div>
       <div class="rtit">Payroll & Compensation Audit</div>
       <ul class="rbul">
-        <li>Processed multi-entity payroll for 500+ employees via Oracle Cloud HCM</li>
-        <li>Built Python anomaly detection pipeline catching $130K+ in irregular pay</li>
-        <li>Bi-weekly audits flagging duplicates, OT violations &amp; code mismatches</li>
-        <li>Automated reports cutting manual review time by 60%</li>
-        <li>Benefit deduction reconciliation and year-end W-2 preparation</li>
-        <li>Coordinated multi-state payroll tax compliance</li>
+        <li>Owned multi-entity payroll execution for 500+ employees in Oracle Cloud HCM</li>
+        <li>Built anomaly detection workflows that surfaced $130K+ in irregular pay risk</li>
+        <li>Led bi-weekly controls across duplicates, overtime exceptions, and code mismatches</li>
+        <li>Automated payroll reporting packs, reducing manual review effort by 60%</li>
+        <li>Managed benefit deduction reconciliation and audit-ready year-end reporting</li>
+        <li>Maintained payroll tax compliance across multi-state requirements</li>
       </ul>
     </div>
     <div class="rcard r2 rv d2">
       <div class="rnum">02</div><div class="rbadge">Business Analyst</div>
       <div class="rtit">Business Analysis & Strategic Insights</div>
       <ul class="rbul">
-        <li>Translated business requirements into data models and solutions</li>
-        <li>Root-cause analysis identifying process inefficiencies and cost drivers</li>
-        <li>Built executive-level reporting combining financial and operational data</li>
-        <li>Defined KPIs aligned to business strategy with stakeholders</li>
-        <li>Gap analysis and feasibility assessments for new initiatives</li>
-        <li>Bridged technical and non-technical leadership teams</li>
+        <li>Converted business requirements into measurable analytics and reporting solutions</li>
+        <li>Performed root-cause analysis to isolate process inefficiencies and cost leakage</li>
+        <li>Produced executive reporting that unified financial and operational performance</li>
+        <li>Defined strategy-aligned KPIs with cross-functional stakeholder ownership</li>
+        <li>Delivered gap analysis and feasibility recommendations for new initiatives</li>
+        <li>Served as translator between technical teams and business leadership</li>
       </ul>
     </div>
     <div class="rcard r3 rv d3">
       <div class="rnum">03</div><div class="rbadge">Finance Analyst</div>
       <div class="rtit">Financial Analysis & Reporting</div>
       <ul class="rbul">
-        <li>Monthly P&amp;L, balance sheet &amp; cash flow statements for leadership</li>
-        <li>Budget vs actuals variance analysis with detailed commentary</li>
-        <li>Financial models in Excel (Power Query, Pivot Tables, dashboards)</li>
-        <li>Audit preparation with accurate financial data reconciliation</li>
-        <li>Cost centre performance — over/under-spend trend reporting</li>
-        <li>Data-driven recommendations improving operating margin by 8%</li>
+        <li>Prepared monthly P&amp;L, balance sheet, and cash flow packs for leadership review</li>
+        <li>Delivered budget-to-actual variance analysis with decision-ready commentary</li>
+        <li>Built Excel finance models using Power Query, pivots, and dashboard views</li>
+        <li>Supported audit readiness through disciplined reconciliations and documentation</li>
+        <li>Tracked cost-center over/under-spend and escalated actionable trends</li>
+        <li>Recommended margin improvement actions that increased operating margin by 8%</li>
       </ul>
     </div>
     <div class="rcard r4 rv d1">
       <div class="rnum">04</div><div class="rbadge">Revenue Analyst</div>
       <div class="rtit">Revenue Analytics & Intelligence</div>
       <ul class="rbul">
-        <li>Tableau and Power BI dashboards tracking $50M+ in revenue</li>
-        <li>Automated financial reporting weekly → real-time via SQL + Python</li>
-        <li>Forecasting models with 94% accuracy over 6-month horizons</li>
-        <li>Identified $2M+ in revenue leakage through reconciliation</li>
-        <li>Variance and trend analysis delivered to CFO and executives</li>
-        <li>Reduced reporting cycle time from weekly to 24 hours</li>
+        <li>Built Tableau and Power BI revenue dashboards tracking $50M+ in performance</li>
+        <li>Automated financial reporting from weekly cycles to near real-time with SQL and Python</li>
+        <li>Deployed forecasting models achieving 94% accuracy across six-month horizons</li>
+        <li>Identified and quantified $2M+ in leakage through reconciliation analytics</li>
+        <li>Delivered CFO-level variance and trend insight for strategic planning</li>
+        <li>Reduced reporting cycle time from one week to 24 hours</li>
       </ul>
     </div>
     <div class="rcard r5 rv d2">
       <div class="rnum">05</div><div class="rbadge">Operations Specialist</div>
       <div class="rtit">Business Operations & Process Excellence</div>
       <ul class="rbul">
-        <li>Mapped workflows reducing cross-departmental cycle times by 35%</li>
-        <li>Developed SOPs adopted across Finance, HR, and Operations</li>
-        <li>Power BI KPI monitoring dashboards for executive reporting</li>
-        <li>Coordinated Oracle Cloud migration for finance and payroll</li>
-        <li>Led process improvement generating measurable cost savings</li>
-        <li>Cross-functional coordination across 4+ departments simultaneously</li>
+        <li>Redesigned workflows that reduced cross-department cycle times by 35%</li>
+        <li>Authored SOPs adopted across finance, HR, and operations teams</li>
+        <li>Implemented KPI monitoring dashboards for executive operations visibility</li>
+        <li>Coordinated Oracle Cloud migration activities across finance and payroll</li>
+        <li>Led process optimization initiatives with measurable cost savings impact</li>
+        <li>Managed simultaneous delivery across four or more functional departments</li>
       </ul>
     </div>
     <div class="rcard r6 rv d3">
       <div class="rnum">06</div><div class="rbadge">Accountant</div>
       <div class="rtit">Accounting & Financial Control</div>
       <ul class="rbul">
-        <li>Full general ledger, journals, and month-end close processes</li>
-        <li>Reconciled bank statements, AP &amp; AR with precision</li>
-        <li>IFRS/GAAP compliance across all financial reporting outputs</li>
-        <li>Fixed asset register including depreciation schedules</li>
-        <li>Trial balance, supporting schedules &amp; audit working papers</li>
-        <li>Reduced month-end close cycle by 3 days through automation</li>
+        <li>Managed full general ledger, journals, and month-end close operations</li>
+        <li>Performed accurate reconciliations across bank, AP, and AR ledgers</li>
+        <li>Ensured IFRS and GAAP compliance across financial reporting outputs</li>
+        <li>Maintained fixed asset registers and depreciation scheduling controls</li>
+        <li>Prepared trial balances, supporting schedules, and audit working papers</li>
+        <li>Shortened month-end close by three days through automation and control design</li>
       </ul>
+    </div>
+  </div>
+</section>
+<div class="div-line"></div>
+
+<!-- ═══ RESUME ═══ -->
+<section id="resume">
+  <div class="rv"><div class="sec-eye">06 — Resume</div><h2 class="sec-h">A concise professional<br/><em>dossier</em></h2></div>
+  <div class="res-grid">
+    <div class="res-main rv d1">
+      <div class="res-kicker">Downloadable Profile</div>
+      <div class="res-title">Lesley Shiri<br/><span>Resume Snapshot</span></div>
+      <p class="res-copy">Built for recruiters and hiring managers who want a fast, credible read on fit: a concise summary of finance rigor, analytical judgment, reporting strength, and cross-functional execution across payroll, revenue, operations, and business analysis.</p>
+      <div class="res-actions">
+        <a href="Lesley_Shiri_Resume.pdf" download class="res-btn res-btn-primary dl-live">Download Resume PDF</a>
+        <a href="#contact" class="res-btn res-btn-ghost">Discuss Opportunities</a>
+        <a href="https://www.linkedin.com/in/lesley-lonely-shiri" target="_blank" class="res-btn res-btn-ghost">LinkedIn Profile</a>
+      </div>
+      <div class="res-panels">
+        <div class="res-panel">
+          <div class="res-label">What You Get</div>
+          <div class="res-list">
+            <div><strong>Finance + analytics:</strong> accounting rigor paired with dashboards, controls, modeling, and business-facing insight delivery.</div>
+            <div><strong>Execution range:</strong> payroll controls, budgeting, revenue intelligence, forecasting, KPI reporting, and process improvement.</div>
+            <div><strong>Decision support:</strong> work designed to improve clarity, reporting speed, operational control, and decision quality.</div>
+          </div>
+        </div>
+        <div class="res-panel">
+          <div class="res-label">Best Fit Roles</div>
+          <div class="res-list">
+            <div><strong>Business Analyst</strong> for finance, operations, and reporting-heavy teams.</div>
+            <div><strong>Finance / Revenue Analyst</strong> for forecasting, KPI reporting, variance review, and performance tracking.</div>
+            <div><strong>Data Analyst</strong> focused on controls, dashboards, automation, and operational insight generation.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="res-side rv d2">
+      <div class="res-kicker">At A Glance</div>
+      <div class="res-statgrid">
+        <div class="res-stat"><strong>8+</strong><span>Years Experience</span></div>
+        <div class="res-stat"><strong>4</strong><span>Qualifications</span></div>
+        <div class="res-stat"><strong>6</strong><span>Professional Roles</span></div>
+        <div class="res-stat"><strong>3</strong><span>Core Domains</span></div>
+      </div>
+      <p class="res-note">Direct contact: <strong style="color:var(--pearl);font-weight:500">lesleylonelyshiri88@gmail.com</strong>. The resume PDF provides a cleaner, formal summary of the same experience presented throughout the portfolio.</p>
+      <div class="res-mini">
+        <span>Business Analytics</span>
+        <span>Financial Reporting</span>
+        <span>Python</span>
+        <span>Power BI</span>
+        <span>SQL</span>
+        <span>Revenue Analysis</span>
+        <span>Payroll Controls</span>
+        <span>Forecasting</span>
+      </div>
     </div>
   </div>
 </section>
@@ -728,7 +1380,7 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.2
 <!-- ═══ TECH ═══ -->
 <section id="tech">
   <div class="rv" style="text-align:center;margin-bottom:42px">
-    <div class="sec-eye" style="justify-content:center">06 — Tech Stack</div>
+    <div class="sec-eye" style="justify-content:center">07 — Tech Stack</div>
     <h2 class="sec-h" style="margin-bottom:0">Tools of the <em>trade</em></h2>
   </div>
   <div class="tg-grid rv d1">
@@ -751,22 +1403,27 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;color:rgba(238,234,224,.2
 <!-- ═══ CONTACT ═══ -->
 <section id="contact">
   <div class="rv">
-    <div class="sec-eye" style="justify-content:center">07 — Let's Build</div>
+    <div class="sec-eye" style="justify-content:center">08 — Let's Build</div>
     <div class="ctbig">READY TO<br/><span>WORK TOGETHER?</span></div>
-    <p class="ctsub">Open to data analyst, finance analyst, business analyst, revenue analytics, and healthcare analytics roles. MBA · MCom · BCom · N.Dip · Six roles · 8+ years — ready to deploy.</p>
+    <p class="ctsub">Open to business analyst, finance analyst, revenue analyst, and data analyst opportunities where strong reporting, control, and analytics execution are valued.</p>
+    <div class="ctmail"><span>Direct</span><strong>lesleylonelyshiri88@gmail.com</strong></div>
     <div class="ctlinks">
-      <a href="mailto:lesleyshiri@example.com" class="clink cl-ind"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Email Me</a>
+      <a href="mailto:lesleylonelyshiri88@gmail.com" class="clink cl-ind"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Email Me</a>
+      <a href="Lesley_Shiri_Resume.pdf" download class="clink cl-ind dl-live"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download Resume</a>
       <a href="https://www.linkedin.com/in/lesley-lonely-shiri" target="_blank" class="clink cl-gho"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+    </div>
+    <div class="ctaux">
       <a href="https://github.com/lesleyshiri" target="_blank" class="clink cl-gho"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>GitHub</a>
-      <a href="LesleyShiri_final_project_report_2025.pdf" download class="clink cl-gho"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Download Report</a>
+      <a href="LesleyShiri_final_project_report_2025.pdf" download class="clink cl-gho"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Project Report</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Lesley L. Shiri — MBA · MCom · BCom · National Diploma · Business Analytics</p>
-  <div class="fr">SHIRI · DATA · 2026</div>
+  <p>© 2026 Lesley L. Shiri · Business Analytics</p>
 </footer>
+
+<a href="Lesley_Shiri_Resume.pdf" download class="resume-fab dl-live">Download Resume</a>
 
 <script>
 /* ─── CANVAS STARFIELD ─── */
@@ -793,6 +1450,27 @@ document.querySelectorAll('a,button,.pl,.rcard,.pcard,.sb,.tnode').forEach(el=>{
 
 /* ─── NAV SCROLL ─── */
 const nv=document.getElementById('nav');addEventListener('scroll',()=>nv.classList.toggle('s',scrollY>50));
+
+function bindProjectModal(modalId,openId,closeId){
+  const modal=document.getElementById(modalId);
+  const openButton=document.getElementById(openId);
+  const closeButton=document.getElementById(closeId);
+  if(!(modal&&openButton&&closeButton))return;
+  openButton.addEventListener('click',()=>modal.classList.add('open'));
+  closeButton.addEventListener('click',()=>modal.classList.remove('open'));
+  modal.addEventListener('click',event=>{if(event.target===modal)modal.classList.remove('open');});
+}
+
+bindProjectModal('diabetesModal','openDiabetesModal','closeDiabetesModal');
+bindProjectModal('payrollModal','openPayrollModal','closePayrollModal');
+bindProjectModal('revenueModal','openRevenueModal','closeRevenueModal');
+bindProjectModal('warehouseModal','openWarehouseModal','closeWarehouseModal');
+bindProjectModal('fraudModal','openFraudModal','closeFraudModal');
+bindProjectModal('cashflowModal','openCashflowModal','closeCashflowModal');
+bindProjectModal('creditModal','openCreditModal','closeCreditModal');
+bindProjectModal('budgetModal','openBudgetModal','closeBudgetModal');
+bindProjectModal('workforceModal','openWorkforceModal','closeWorkforceModal');
+bindProjectModal('leakageModal','openLeakageModal','closeLeakageModal');
 
 /* ─── SCROLL REVEAL ─── */
 const ro=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on')}),{threshold:.1});
